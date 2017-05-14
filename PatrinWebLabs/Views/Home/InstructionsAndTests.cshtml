@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+@model System.Collections.ArrayList
+@{
+    ViewBag.Title = "Инструкции и тесты";
+}
+<html>
+<head>
+    <link href="http://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="http://vjs.zencdn.net/5.19.2/video.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <style type="text/css">
+        .image-content {
+            padding: 15px;
+            font-size: 18px;
+            min-height: 300px;
+            background: #E3F2FD;
+            margin-bottom: 10px;
+        }
+
+        label.custom {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+            label.custom > input[type=checkbox] {
+                display: none;
+            }
+
+            label.custom > span {
+                display: block;
+                background: url(http://smart-yacht.ru/assets/img/checkbox2.png);
+                width: 19px;
+                height: 21px;
+            }
+
+            label.custom input[type=checkbox]:checked + span {
+                background-position: 0px -50px;
+            }
+
+        .combobox {
+            margin: 15px;
+        }
+
+        .content {
+            padding: 15px;
+            font-size: 18px;
+            min-height: 200px;
+            background: #E3F2FD;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .popup {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: none;
+            text-align: center;
+        }
+
+        .popup_bg {
+            background: rgba(0,0,0,0.4);
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .popup_img {
+            position: relative;
+            margin: 20px;
+            z-index: 2;
+            max-height: 80%;
+            max-width: 80%;
+            margin: 5% 0 0 0;
+        }
+
+        .bs-example {
+            margin: 20px;
+        }
+
+        body {
+            padding-top: 50px;
+        }
+
+        .btn-file {
+            position: relative;
+            overflow: hidden;
+            margin-right: 4px;
+        }
+
+            .btn-file input {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 0;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                transform: translate(-300px, 0) scale(4);
+                font-size: 23px;
+                direction: ltr;
+                cursor: pointer;
+            }
+
+        * + html .btn-file {
+            padding: 2px 15px;
+            margin: 0px 0 0 0;
+        }
+    </style>
+    <style>
+        body {
+            background: #E3F2FD;
+        }
+    </style>
+    <SCRIPT type="text/javascript">
+        $(document).ready(function () {
+
+            $(".image").click(function () {
+                var img = $(this);
+                var src = img.attr('src');
+                $("body").append("<div class='popup'>" +
+                                 "<div class='popup_bg'></div>" +
+                                 "<img src='" + src + "' class='popup_img' />" +
+                                 "</div>");
+                $(".popup").fadeIn(800);
+                $(".popup_bg").click(function () {
+                    $(".popup").fadeOut(300);
+                    setTimeout(function () {
+                        $(".popup").remove();
+                    }, 300);
+                });
+            });
+
+        });
+        function openfileDialog() {
+            $("#fileLoader").click();
+        }
+        (function ($) {
+            $(function () {
+                $('.btn-file').each(function () {
+                    var self = this;
+                    $('input[type=file]', this).change(function () {
+                        var value = $(this).val();
+                        var fileName = value.substring(value.lastIndexOf('/') + 1);
+                        var fileExt = fileName.split('.').pop().toLowerCase();
+                        this.Text = fileName;
+                    });
+                });
+            });
+        })(jQuery);
+        $(document).ready(function () {
+            $("#delete").click(function () {
+                var favorite = [];
+                $.each($("input[name='instructionsvideos']:checked"), function () {
+                    favorite.push($(this).val());
+                });
+                var test = {
+                    'Str': favorite[0],
+                    'Str2': favorite[1],
+                    'Str3': favorite[2],
+                    'Str4': favorite[3],
+                    'Str5': favorite[4],
+                };
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/AjaxDelete",
+                    data: JSON.stringify(test),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: successFunc,
+                    error: errorFunc
+                });
+            });
+        });
+        function successFunc(data, status) {
+            alert(data);
+            location.reload();
+        }
+        function errorFunc(errorData) {
+            alert('Ошибка удаления!');
+            location.reload();
+        }
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </SCRIPT>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            @using (Html.BeginForm("Upload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <div class="col-sm-7 col-xs-7 col-md-7 col-lg-7">
+                    <div class="bs-example">
+                        <div class="btn-group">
+                            <span class="btn btn-success btn-file">
+                                <i class="glyphicon glyphicon-folder-open"> </i><span>  Выбрать файл...</span>
+                                <input type="file" name="upload" /><br>
+                            </span>
+                            <span class="btn btn-info btn-file">
+                                <i class="glyphicon glyphicon-cloud-upload"> </i><span>  Загрузить файл...</span>
+                                <input type="submit" />
+                            </span>
+                            <button type="button" class="btn btn-warning" data-toggle="tooltip" style="margin-right:10px" id="delete" name="delete" title="Не более 5 файлов!"><span class="glyphicon glyphicon-trash"></span>  Удалить...</button>
+                            <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+                                <input class="form-control" id="PlaceN" name="PlaceN" type="text" placeholder="№ места">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5">
+                <div class="bs-example">
+                    <div class="dropdown">
+                        <button class="btn btn-info dropdown-toggle pull-right" type="button" data-toggle="dropdown">
+                            Фильтр отображения
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu ">
+                            <li><a href="~/Home/InstructionsAndTests">Производственные инструкции</a></li>
+                            <li><a href="~/Home/Videos">Видеофайлы</a></li>
+                            <li><a href="~/Home/Tests">Тесты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            @if (((PatrinWebLabs.Models.InstructionsVideos)Model[0]).Data4.Count == 0)
+            {
+                { Html.RenderPartial("ViewEmtyInstructions"); }
+            }
+            else
+            {
+                foreach (var data in ((PatrinWebLabs.Models.InstructionsVideos)Model[0]).Data4)
+                {
+                    if (data.URL.Contains("mp4"))
+                    {
+                        <div class="col-md-4 col-lg-4">
+                            <div class="content">
+                                <video id="my-video" class="video-js img-rounded" controls preload="auto" width="330" height="252"
+                                       poster="" data-setup="{}">
+                                    <source src="@data.URL" type='video/mp4'>
+                                    <p class="vjs-no-js">
+                                        Для просмотра видеофайлов разрешите использование JavaScript
+                                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                    </p>
+                                </video>
+                                <div class="panel panel-default">
+                                    <div class="panel-body"><h6>@data.URL.Split(new string[] { "/" }, StringSplitOptions.RemoveEmptyEntries)[3]</h6></div>
+                                </div>
+                                <div class="checkbox">
+                                    <label class="custom"><input type="checkbox" value="@data.URL" name="instructionsvideos"><span></span></label>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else if (data.URL.Contains("JPG") || data.URL.Contains("jpg"))
+                    {
+                        <div class="col-md-4 col-lg-4">
+                            <div class="content">
+                                <img src="@data.URL" class="img-rounded image image-content" style="width: 100%">
+                                <div class="panel panel-default">
+                                    <div class="panel-body"><h6>@data.URL.Split(new string[] { "/" }, StringSplitOptions.RemoveEmptyEntries)[3]</h6></div>
+                                </div>
+                                <div class="checkbox">
+                                    <label class="custom"><input type="checkbox" value="@data.URL" name="instructionsvideos"><span></span></label>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            }
+        </div>
+    </div>
+
+</body>
+
+</html>

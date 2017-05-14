@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+@model System.Collections.ArrayList
+
+@{
+    ViewBag.Title = "Главная страница";
+}
+
+@*@if (Request.IsAuthenticated)
+    {*@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#myCarousel").carousel({
+                interval: false,
+            });
+        });
+        $(document).ready(function () {
+            $("#delete").click(function () {
+                var favorite = [];
+                $("#table1").find('input[name="record"]').each(function () {
+                    if ($(this).is(":checked")) {
+                        $(this).parents("tr").remove();
+                        favorite.push($(this).val());
+                    }
+                });
+                var test = {
+                    'Str': favorite[0],
+                    'Str2': favorite[1],
+                    'Str3': favorite[2],
+                    'Str4': favorite[3],
+                    'Str5': favorite[4],
+                };
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/AjaxDeleteIndex",
+                    data: JSON.stringify(test),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: successFunc,
+                    error: errorFunc
+                });
+            });
+        });
+        function successFunc(data, status) {
+            alert(data);
+            location.reload();
+        }
+        function errorFunc(errorData) {
+            alert('Ошибка удаления работника!');
+            location.reload();
+        }
+        $(document).ready(function () {
+            $("#change").click(function () {
+                var favorite = [];
+                $.each($("input[name='record']:checked"), function () {
+                    favorite.push($(this).val());
+                });
+                var test = {
+                    'employeeData': favorite[0],
+                };
+                if (favorite[0] == null) {
+                    alert("Работник не выбран!");
+                    location.reload();
+                }
+                else {
+                    $.ajax({
+                        type: "POST",
+                        url: "/Home/GetEmployee",
+                        data: JSON.stringify(test),
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (data) {
+                            document.getElementById('IDChange').value = data.split(" ")[0];
+                            document.getElementById('inputNameChange').value = data.split(" ")[1]+ " "+ data.split(" ")[2];
+                            document.getElementById('inputPlaceNChange').value = data.split(" ")[3];
+                            document.getElementById('inputLineChange').value = data.split(" ")[4];
+                            document.getElementById('inputTurnoChange').value = data.split(" ")[5];
+                        },
+                        error: function () {
+                            alert("Произошла ошибка в процессе изменения данных о работнике.");
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        label.custom {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+            label.custom > input[type=checkbox] {
+                display: none;
+            }
+
+            label.custom > span {
+                display: block;
+                background: url(http://smart-yacht.ru/assets/img/checkbox2.png);
+                width: 19px;
+                height: 21px;
+            }
+
+            label.custom input[type=checkbox]:checked + span {
+                background-position: 0px -50px;
+            }
+
+        .carousel {
+            margin-top: 0px;
+            background: transparent;
+        }
+
+            .carousel .item img {
+                margin: 0 auto;
+            }
+
+        .slider {
+            margin: 0px;
+        }
+
+        .jumbotron {
+            background: #E3F2FD;
+        }
+
+        body {
+            background: #E3F2FD;
+        }
+
+        p.dline {
+            line-height: 1.5;
+        }
+
+        P {
+            line-height: 0.9em;
+        }
+
+        div.block {
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="slider">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="active item">
+                        <img src="@Url.Action("GetChart1")" alt="First Slide">
+                    </div>
+                    <div class="item">
+                        <img src="@Url.Action("GetChart2")" alt="Second Slide">
+                    </div>
+                    <div class="item">
+                        <img src="@Url.Action("GetChart3")" alt="Third Slide">
+                    </div>
+                </div>
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="Modal1">
+        <!-- Modal Contents -->
+        <div id="Modal1" class="modal fade ">
+            <!-- class modal and fade -->
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- modal header -->
+                        <button type="button" class="close"
+                                data-dismiss="modal" aria-hidden="true"></button>
+                        <h4 class="modal-title">Добавление работника</h4>
+                    </div>
+                    <form method="post" action="~/Home/Index">
+                        <div class="modal-body">
+                            <p class="dline"><input type="text" name="inputID" class="form-control" placeholder="Номер пропуска" id="inputID">
+                            <p class="dline"><input type="text" name="inputName" class="form-control" placeholder="Имя работника" id="inputName">
+                            <p class="dline"><input type="text" name="inputPlaceN" class="form-control" placeholder="Номер рабочего места" id="inputPlaceN">
+                            <p class="dline"><input type="text" name="inputLine" class="form-control" placeholder="Номер линии" id="inputLine">
+                            <p class="dline"><input type="text" name="inputTurno" class="form-control" placeholder="Смена" id="inputTurno">
+                        </div>
+                        <div class="modal-footer">
+                            <!-- modal footer -->
+                            <div align="left">
+                                <p class="dline"><button type="button" class="btn btn-default" data-dismiss="modal">Отменить</button></p>
+                                <p class="dline"><button type="submit" class="btn btn-primary">Добавить</button></p>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- / .modal-content -->
+            </div> <!-- / .modal-dialog -->
+        </div><!-- / .modal -->
+    </div>
+
+
+    <div class="Modal2">
+        <!-- Modal Contents -->
+        <div id="Modal2" class="modal fade">
+            <!-- class modal and fade -->
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- modal header -->
+                        <button type="button" class="close"
+                                data-dismiss="modal" aria-hidden="true"></button>
+                        <h4 class="modal-title">Изменение работника</h4>
+                    </div>
+                    <form method="post" action="~/Home/Update">
+                        <div class="modal-body">
+                            <label for="id" class="control-label">Номер пропуска:</label>
+                            <input type="text" name="inputID" class="form-control" id="IDChange">
+                            <p class="dline">
+                                <label for="name" class="control-label">Имя работника:</label>
+                                <input type="text" name="inputName" class="form-control" id="inputNameChange">
+                            <p class="dline">
+                                <label for="place" class="control-label">Номер рабочего места:</label>
+                                <input type="text" name="inputPlaceN" class="form-control" id="inputPlaceNChange">
+                            <p class="dline">
+                                <label for="line" class="control-label">Линия:</label>
+                                <input type="text" name="inputLine" class="form-control" id="inputLineChange">
+                            <p class="dline">
+                                <label for="turno" class="control-label">Смена:</label>
+                                <input type="text" name="inputTurno" class="form-control" id="inputTurnoChange">
+                            <p class="dline">
+                        </div>
+                        <div class="modal-footer">
+                            <!-- modal footer -->
+                            <div align="left">
+                                <p class="dline"><button type="button" class="btn btn-default" data-dismiss="modal">Отменить</button></p>
+                                <p class="dline"><button type="submit" class="btn btn-primary">Сохранить изменения</button></p>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- / .modal-content -->
+            </div> <!-- / .modal-dialog -->
+        </div><!-- / .modal -->
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+            <div class="panel-group">
+                <div class="panel panel-info">
+                    <div class="panel-heading">Работники - последние 10 регистраций</div>
+                    <table class="table table-hover table-bordered" id="table1">
+                        <thead>
+                            <tr>
+                                <th>Номер пропуска</th>
+                                <th>Имя</th>
+                                <th>Линия</th>
+                                <th>Рабочее место</th>
+                                <th>Смена</th>
+                                <th>Статус</th>
+                            </tr>
+                        </thead>
+                        @foreach (var data in ((PatrinWebLabs.Models.Employess)Model[0]).Data1)
+                        {
+                            <tbody>
+                                <tr>
+                                    <td>@data.ID</td>
+                                    <td>@data.Name</td>
+                                    <td>@data.Line</td>
+                                    <td>@data.NameWorkPlace</td>
+                                    <td>@data.Turno</td>
+                                    <td>@data.Status</td>
+                                    <td>
+                                        <label class="custom">
+                                            <input type="checkbox" name="record" value="@data.Name @data.Line @data.Turno @data.NameWorkPlace, @data.Status, @data.ID"><span></span>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+            <a href="#Modal1" id='add' name="add" class="btn btn-default" data-toggle="modal"><span class="glyphicon glyphicon-pencil"></span> Добавление нового работника</a>
+            <a href="#Modal2" id='change' name="change" class="btn btn-info" data-toggle="modal"><span class="glyphicon glyphicon-edit"></span> Правка</a>
+            <button type="submit" id="delete" name="delete" class="btn btn-warning"><span class="glyphicon glyphicon-trash"></span> Удаление</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding-top:25px">
+            <div class="panel-group">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">Дефекты - последние 10 регистраций</div>
+                    <table class="table table-hover table-bordered" id="table2">
+                        <thead>
+                            <tr>
+                                <th>Имя</th>
+                                <th>Линия</th>
+                                <th>Рабочее место</th>
+                                <th>Смена</th>
+                                <th>Описание</th>
+                                <th>Дата</th>
+                                <th>Статус</th>
+                            </tr>
+                        </thead>
+                        @foreach (var data in ((PatrinWebLabs.Models.Defects)Model[1]).Data2)
+                        {
+                            <tbody>
+                                <tr>
+                                    <td>@data.DefectName</td>
+                                    <td>@data.DefectLine</td>
+                                    <td>@data.DefectNameWorkPlace</td>
+                                    <td>@data.DefectTurno</td>
+                                    <td>@data.DefectDescription</td>
+                                    <td>@data.DefectDate</td>
+                                    @if (@data.DefectStatus == "На линии")
+                                    {
+                                        <td class="danger">@data.DefectStatus</td>
+                                    }
+                                    else
+                                    {
+                                        <td class="success">@data.DefectStatus</td>
+                                    }
+                                    <td>
+                                        <label class="custom">
+                                            <input type="checkbox" name="record"><span></span>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding-top:25px">
+            <div class="panel-group">
+                <div class="panel panel-info">
+                    <div class="panel-heading">Терминалы на линиях - проверка доступности</div>
+                    <table class="table table-hover table-bordered" id="table3">
+                        <thead>
+                            <tr>
+                                <th>Тип устройства</th>
+                                <th>IP-адрес</th>
+                                <th>Линия</th>
+                                <th>Рабочее место</th>
+                                <th>Статус</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                @foreach (var data in ((PatrinWebLabs.Models.Tablets)Model[2]).Data3)
+                                {
+                            <tbody>
+                                <tr>
+                                    <td><img src="http://stylus.ua/thumbs/320x320/94/26/425608.jpeg" class="img-thumbnail" alt="Планшет" width="50" height="50" /> Планшет</td>
+                                    <td>@data.IP</td>
+                                    <td>@data.LineTablet</td>
+                                    <td>@data.NameWorkPlaceTablet</td>
+                                    <td>@data.Tablets_Status</td>
+                                    <td>
+                                        <label class="custom">
+                                            <input type="checkbox" name="record"><span></span>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                                }
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+            <a href="" id='check' name="check" class="btn btn-info"><span class="glyphicon glyphicon-check"></span> Проверить доступность планшетов...</a>
+        </div>
+    </div>
+        </body>
+        @*}
+            else
+            {
+                @Html.Action("Login", "Account")
+            }*@
+    </html>

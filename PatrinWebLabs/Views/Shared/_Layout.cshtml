@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+@using System.Security.Claims;
+@{
+    string type = string.Empty;
+    try
+    {
+        ClaimsIdentity user = (ClaimsIdentity)(User.Identity);
+        IEnumerable<Claim> claims = user.Claims;
+        type = claims.ElementAt(4).Value;
+    }
+    catch (Exception ex)
+    {
+
+    }
+
+}
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title – терминал</title>
+    <style>
+        .margin {
+            margin-top: 3%;
+        }
+    </style>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script type='text/javascript'>
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } }
+            var t = { config: config }, u = document, e = window, o = 'script', s = u.createElement(o), i, f; for (s.src = config.url || '//az416426.vo.msecnd.net/scripts/a/ai.0.js', u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Ajax']; i.length;) r('track' + i.pop()); return r('setAuthenticatedUserContext'), r('clearAuthenticatedUserContext'), config.disableExceptionTracking || (i = 'onerror', r('_' + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t['_' + i](config, r, u, e, o), s }), t
+        }({
+            instrumentationKey: '7794b9e9-e926-434d-805f-ac7b92d0a99d'
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @if (type == "")
+                {
+                @Html.ActionLink("Терминал мониторинга", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                }
+                else
+                {
+                    @Html.ActionLink(type, "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                }
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.whirlpool.com/"><img src="http://repair.whirlpool.com/wp-content/uploads/WhirlpoolCorp-2017Logo_2C_B.png" class="img-responsive" width="70" height="70"></a></li>
+                    @*<li>@Html.ActionLink("Работники", "Employees", "Home")</li>*@
+                    <li>@Html.ActionLink("Дефекты ", "Defects", "Home")</li>
+                    <li>@Html.ActionLink("Инструкции и тесты", "InstructionsAndTests", "Home")</li>
+                    <li>@Html.ActionLink("FAQ", "FAQ", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <span class="panelGroup">
+                <span class="brwText"><span style="font-weight: bold;">Внимание:</span> сайт корректно работает в браузерах</span>
+            </span>
+            <span class="panelGroup">
+                <img class="browsersIcons" id="chromeIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABfElEQVQ4ja2SP0hCURSHv/eqB5WGFREEiYMuRUZD0BI+aRMhN8El2wN1iLbmwqEXRLTlIELQ8KJwaOm5SZsQ/aPBISJoiHpa8CRrSMVuiUGd6d7v3vO753fugT+GJIJiwKcCMSAkHOnApiubM1oKFAO+DSDe5lHNlc0lvgkUA75dINq+6K8iMoB9L6qmx/p+mwwQv1+aUwE6ayC2PdnP/E0Ju1VF6rXhWFlFGfcCIL+eo9wloVpuFomxhSHXNiFTkVmfHgTAsbLKvjlFUFMIagrpwgTWyLJYRahhoR4HbhvXowNU3F4y+Y4Gz+Q7qHaP8d419M2LLIKk6mxpXKo8tBfIy08UStdEZt4aLDLzxu3z5Y+idQG9GS6c7uDyXHAUtziKW7g8FxxfbYq5OtTmwL4XVYGTVqU7u6qcuR9F7Je8h5+/YIZTBpBqJbA2XBaRJnkPjWYLmOHUIqCJN2d7KgTtlpjcGOUvTTTDqQTgp6kna8Mv9aVeKzvBf8YHa6xqn1AsqSQAAAAASUVORK5CYII=" />
+                <span class="brwText">Chrome,</span>
+            </span>
+            <span class="panelGroup">
+                <img class="browsersIcons" id="firefoxIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADYElEQVQ4jW2TXWhbZQBAz5d7c5ubv2Zpa7r+ru3ajtVGLWqpA6uuTthANhGsoJ0++OaDggj64sNgL4KI4HTggzJlIjKUTsSCrlW7WqvDrWurtMvapEvSNG2a5ucmNzf380nB4nk+nLcj+B9aHxl7bPTpkyd62kM9FdNkfjkW+Wr8228S0xcn9roC4FSv293srgYvZAdaDh05fv7Mq2Ph3rZ6qjUawrYprq8wP/kFiyvLf1y/Onf669nlG/8EFID3jsg3ktXAKzPa8Ftjp0aaBhtuEolFiOqdpHZLbG6bxOMbhPmt8fRR7cUmna2grlkL8WJSAXi21/HOSK/60EuD68rxyjjGrRgX9JPkpE4yX+GOw8WOpXPppzQyn1ZHH3Yd0+qaWy9NrX6uerw+d6DHddDjdEC2RM62qW7+TmjrE6abnkB0hLFNi0xGI9J2lJu5MB3LH2qP9/LkYOe+A+qZ510v9Ohlv7AUKlJFk5KWeg/H/DGurC8wnwtQjCcw4kn8h/qQVRU32zhti3tCYswRW7CGdJ8D6ZG4bYnu9EKwmaViLdf1B7HKVcrrUezdNOX1KKW8ia9LIAIlhsPqoHqwS8QLJRtpasRTFf6ai/JBoBMrpGO3m0ihotboWKkYRuQGQ60m7f4Csgz1/Y6SY+lahbyh4PAqVPImjXWS0fY4scD99Bdu81rpewYCFhhZhFXmRPcmSryKcEFyTUbVWzF7aXVVcrhbELhLw28ZVDaW+VR/kwY9yGzWhUjVglFHa52Pw1oSxduOtKJMTFVn1EXVNfHrbNFsaQxovlqJ6pTcV8hzfsXPZ+l7WSrWUExH6agr8v7dVxnqCaGEGpj77nZ6Kub4QckWjNyBGq3fWzT7fEEvTr8b0+1koNGgq16huT7AU23bnA0v091n4h0eIXN5nHOT9rtXFjcvKwAZj/9aMG88I7YLXhQdRA2FvEWouskD6gphTxrv/jLafoP8zAofT1u/XPxTvJzNFQwFYKdgZFKe2hlXxXrUl8nuK6Z2KWeK2LsWqilx1ggUVLJrCudmxI8fzYvnYolU4t8XALbyRizhDn4ZsdRqVVInhfArilTKtmRtV5qT646ls9e0t39OKK/H4qnkf27cS3tzKCihxbZlkwRVEcSFEJG1Oxs7e92/AXE6iHZEF73UAAAAAElFTkSuQmCC" />
+                <span class="brwText">Firefox</span>
+            </span>
+
+            <div class="margin" margin-top: 20%></div> <right><p> &copy; Все материалы (ресурсы, информация), размещенные на сайте patrinweb.ru взяты из открытых источников. Материалы используются в некоммерческих целях.</p></right>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

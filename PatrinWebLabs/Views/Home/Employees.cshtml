@@ -1,0 +1,157 @@
+﻿@model System.Collections.ArrayList
+@{
+    ViewBag.Title = "Работники";
+}
+<!DOCTYPE html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+    <script type="text/javascript">
+     //Скрипт для поиска когда-то будет тут
+    </script>
+    <style type="text/css">
+        .bs-example {
+            font-family: sans-serif;
+            position: relative;
+        }
+        body {
+            background: #E3F2FD;
+        }
+
+        p.dline {
+            line-height: 1.5;
+        }
+
+        P {
+            line-height: 0.9em;
+        }
+
+        div.block {
+            position: relative;
+        }
+        .typeahead, .tt-query, .tt-hint {
+            border: 2px solid #CCCCCC;
+            border-radius: 8px;
+            font-size: 20px;
+            height: 25px;
+            line-height: 30px;
+            outline: medium none;
+            padding: 8px 12px;
+            width: 396px;
+        }
+
+        .typeahead {
+            background-color: #FFFFFF;
+        }
+
+            .typeahead:focus {
+                border: 2px solid #0097CF;
+            }
+
+        .tt-query {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        }
+
+        .tt-hint {
+            color: #999999;
+        }
+
+        .tt-menu {
+            background-color: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 12px;
+            padding: 8px 0;
+            width: 422px;
+        }
+
+        .tt-suggestion {
+            font-size: 22px;
+            padding: 3px 20px;
+        }
+
+            .tt-suggestion:hover {
+                cursor: pointer;
+                background-color: #0097CF;
+                color: #FFFFFF;
+            }
+
+            .tt-suggestion p {
+                margin: 0;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="row" style="padding-top:10px">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+            <form role="search" class="navbar-form navbar-left" style="padding-top:10px">
+                <div class="form-group">
+                    <div class="bs-example">
+                        <span class="glyphicon glyphicon-search" style="padding-right:3px"></span><input type="text" placeholder="Введите № пропуска" class="form-control typeahead tt-query" autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+                </form>
+        </div>
+    </div>
+        <div class="row" style="padding-top:10px">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                <div class="panel-group">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Работники - общий список</div>
+                        <table class="table table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Номер пропуска №</th>
+                                    <th>Имя</th>
+                                    <th>Линия</th>
+                                    <th>Рабочее место</th>
+                                    <th>Смена</th>
+                                    <th>Статус</th>
+                                </tr>
+                            </thead>
+                            @foreach (var data in ((PatrinWebLabs.Models.Employess)Model[0]).Data1)
+                            {
+                                <tbody>
+                                    <tr>
+                                        <td>@data.Name</td>
+                                        <td>@data.Name</td>
+                                        <td>@data.Line</td>
+                                        <td>@data.NameWorkPlace</td>
+                                        <td>@data.Turno</td>
+                                        <td>@data.Status</td>
+                                    </tr>
+                                </tbody>
+                            }
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+            <button type="submit" class="btn btn-default disabled" data-toggle="modal"><span class="glyphicon glyphicon-pencil"></span> Добавление</button>
+            <button type="submit" class="btn btn-info disabled"><span class="glyphicon glyphicon-edit"></span> Изменение</button>
+            <button type="submit" class="btn btn-warning disabled"><span class="glyphicon glyphicon-trash"></span> Удаление</button>
+        </div>
+    </div>
+        <div class="row">
+            <div>
+                <div align="center">
+                    <ul class="pagination">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+</body>
+
+
