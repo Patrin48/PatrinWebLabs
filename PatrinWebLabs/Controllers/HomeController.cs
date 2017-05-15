@@ -13,6 +13,7 @@ using PagedList;
 using System.Linq;
 using System.Web.UI;
 using System.Security.Claims;
+using System.Net.NetworkInformation;
 
 namespace PatrinWebLabs.Controllers
 {
@@ -607,10 +608,28 @@ namespace PatrinWebLabs.Controllers
             return View("InstructionsAndTests", inst_data);
         }
         [HttpGet]
-        public ActionResult Tests()
+        public ActionResult CheckTablets()
         {
+            try
+            {
+                Ping myPing = new Ping();
+                PingReply reply = myPing.Send("178.234.109.160", 1000);
 
-            return View();
+                if (reply.Status.ToString() != "TimedOut")
+                {
+                    return Content("<script language='javascript' type='text/javascript'>alert('Пинганулся!!!');window.location.href = 'Index';</script>");
+
+                }
+                else
+                {
+                    return Content("<script language='javascript' type='text/javascript'>alert('НЕ Пинганулся!!!');window.location.href = 'Index';</script>");
+                }
+            }
+            catch
+            {
+
+            }
+            return Content("<script language='javascript' type='text/javascript'>alert('');window.location.href = 'Index';</script>");
         }
     }
 }

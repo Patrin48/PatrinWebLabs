@@ -75,7 +75,7 @@
                         dataType: "json",
                         success: function (data) {
                             document.getElementById('IDChange').value = data.split(" ")[0];
-                            document.getElementById('inputNameChange').value = data.split(" ")[1]+ " "+ data.split(" ")[2];
+                            document.getElementById('inputNameChange').value = data.split(" ")[1] + " " + data.split(" ")[2];
                             document.getElementById('inputPlaceNChange').value = data.split(" ")[3];
                             document.getElementById('inputLineChange').value = data.split(" ")[4];
                             document.getElementById('inputTurnoChange').value = data.split(" ")[5];
@@ -372,7 +372,14 @@
                                     <td>@data.IP</td>
                                     <td>@data.LineTablet</td>
                                     <td>@data.NameWorkPlaceTablet</td>
-                                    <td>@data.Tablets_Status</td>
+                                    @if (@data.Tablets_Status == "В сети")
+                                    {
+                                        <td class="success">@data.Tablets_Status</td>
+                                    }
+                                    else
+                                    {
+                                        <td class="danger">@data.Tablets_Status</td>
+                                    }
                                     <td>
                                         <label class="custom">
                                             <input type="checkbox" name="record"><span></span>
@@ -386,11 +393,11 @@
                     </div>
                 </div>
             </div>
-    <div class="row">
-        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
-            <a href="" id='check' name="check" class="btn btn-info"><span class="glyphicon glyphicon-check"></span> Проверить доступность планшетов...</a>
-        </div>
-    </div>
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                    <a href="@Url.Action("CheckTablets")" id='check' name="check" class="btn btn-info"><span class="glyphicon glyphicon-check"></span> Проверить доступность планшетов...</a>
+                </div>
+            </div>
         </body>
         @*}
             else
