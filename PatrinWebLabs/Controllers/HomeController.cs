@@ -384,7 +384,7 @@ namespace PatrinWebLabs.Controllers
                 }
                 cn.Close();
             }
-                return Json("");
+            return Json("");
         }
 
         [HttpPost]
@@ -607,29 +607,41 @@ namespace PatrinWebLabs.Controllers
             inst_data.Add(load_inst);
             return View("InstructionsAndTests", inst_data);
         }
-        [HttpGet]
-        public ActionResult CheckTablets()
+
+        public ActionResult Tablets()
         {
+            ArrayList allData = new ArrayList();
             try
             {
+                Tablets load_tab = new Tablets();
+                load_tab.PingAndLoadTablets();
+
+                allData.Add(load_tab);
                 Ping myPing = new Ping();
-                PingReply reply = myPing.Send("178.234.109.160", 1000);
+                PingReply reply = null;
 
-                if (reply.Status.ToString() != "TimedOut")
+                foreach (var data in load_tab.Data3)
                 {
-                    return Content("<script language='javascript' type='text/javascript'>alert('Пинганулся!!!');window.location.href = 'Index';</script>");
+                    reply = myPing.Send(data.IP, 1000);
 
+                    if (reply.Status.ToString() != "TimedOut")
+                    {
+                        data.Tablets_Status = "В сети";
+
+                    }
+                    else
+                    {
+                        data.Tablets_Status = "Не в сети";
+                    }
                 }
-                else
-                {
-                    return Content("<script language='javascript' type='text/javascript'>alert('НЕ Пинганулся!!!');window.location.href = 'Index';</script>");
-                }
+                
             }
             catch
             {
 
             }
-            return Content("<script language='javascript' type='text/javascript'>alert('');window.location.href = 'Index';</script>");
+
+            return PartialView(allData);
         }
     }
 }

@@ -5,13 +5,13 @@
     ViewBag.Title = "Главная страница";
 }
 
-@*@if (Request.IsAuthenticated)
-    {*@
+
 <html>
 <head>
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    @Scripts.Render("~/Scripts/jquery.unobtrusive-ajax.js")
     <script type="text/javascript">
         $(document).ready(function () {
             $("#myCarousel").carousel({
@@ -347,61 +347,16 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding-top:25px">
-            <div class="panel-group">
-                <div class="panel panel-info">
-                    <div class="panel-heading">Терминалы на линиях - проверка доступности</div>
-                    <table class="table table-hover table-bordered" id="table3">
-                        <thead>
-                            <tr>
-                                <th>Тип устройства</th>
-                                <th>IP-адрес</th>
-                                <th>Линия</th>
-                                <th>Рабочее место</th>
-                                <th>Статус</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                @foreach (var data in ((PatrinWebLabs.Models.Tablets)Model[2]).Data3)
-                                {
-                            <tbody>
-                                <tr>
-                                    <td><img src="http://stylus.ua/thumbs/320x320/94/26/425608.jpeg" class="img-thumbnail" alt="Планшет" width="50" height="50" /> Планшет</td>
-                                    <td>@data.IP</td>
-                                    <td>@data.LineTablet</td>
-                                    <td>@data.NameWorkPlaceTablet</td>
-                                    @if (@data.Tablets_Status == "В сети")
-                                    {
-                                        <td class="success">@data.Tablets_Status</td>
-                                    }
-                                    else
-                                    {
-                                        <td class="danger">@data.Tablets_Status</td>
-                                    }
-                                    <td>
-                                        <label class="custom">
-                                            <input type="checkbox" name="record"><span></span>
-                                        </label>
-                                    </td>
-                                </tr>
-                            </tbody>
-                                }
-                            </table>
-                        </div>
-                    </div>
-                </div>
+    <div id="results"></div>
+    @using (Ajax.BeginForm("Tablets", new AjaxOptions { UpdateTargetId = "results", LoadingElementId = "loading" }))
+    {
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> Опросить планшеты</button>
+                <img id="loading" src="@Url.Content("~/Content/ajax-loader.gif")" style="display:none" />
             </div>
-            <div class="row">
-                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
-                    <a href="@Url.Action("CheckTablets")" id='check' name="check" class="btn btn-info"><span class="glyphicon glyphicon-check"></span> Проверить доступность планшетов...</a>
-                </div>
-            </div>
-        </body>
-        @*}
-            else
-            {
-                @Html.Action("Login", "Account")
-            }*@
-    </html>
+        </div>
+    }
+  
+</body>
+</html>
