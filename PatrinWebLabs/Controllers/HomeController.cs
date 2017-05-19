@@ -1,19 +1,18 @@
-﻿using System;
+﻿using PagedList;
+using PatrinWebLabs.Models;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
+using System.Linq;
+using System.Net;
+using System.Net.NetworkInformation;
+using System.Security.Claims;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.UI.DataVisualization.Charting;
-using PatrinWebLabs.Models;
-using System.Collections;
-using System.Web;
-using System.Net;
-using PagedList;
-using System.Linq;
-using System.Web.UI;
-using System.Security.Claims;
-using System.Net.NetworkInformation;
 
 namespace PatrinWebLabs.Controllers
 {
@@ -23,6 +22,7 @@ namespace PatrinWebLabs.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+            Logger.InitLogger();
             ClaimsIdentity user = (ClaimsIdentity)(User.Identity);
             string type = string.Empty;
             string right = string.Empty;
@@ -36,9 +36,10 @@ namespace PatrinWebLabs.Controllers
             }
             catch (Exception ex)
             {
+                Logger.Log.Error("Попытка несанкционированный доступ!" + ex.Message);
                 return Redirect("/Account/Login");
             }
-            if (type == "Rights" && right == "Администратор")
+            if (type == "Rights" && right == "Администратор" || right=="Работник ОК")
             {
                 string browser = HttpContext.Request.Browser.Browser;
                 string user_agent = HttpContext.Request.UserAgent;
@@ -59,7 +60,10 @@ namespace PatrinWebLabs.Controllers
                 allData.Add(load_tab);
 
                 if (user_agent.Contains("Chrome") || (user_agent.Contains("Mozilla")))
+                {
+                    Logger.Log.Info("Загружена главная страница");
                     return View(allData);
+                }
                 else
                 {
                     return Content("<script language='javascript' type='text/javascript'>alert('Сайт в данном браузере работает некорректно! Дальнейшая работа невозможна!');window.location.href = 'Index';</script>");
@@ -77,6 +81,7 @@ namespace PatrinWebLabs.Controllers
         [HttpPost]
         public ActionResult Update(string inputID, string inputName, string inputPlaceN, string inputLine, string inputTurno)
         {
+            Logger.InitLogger();
             if (inputID == "" || inputName == "" || inputPlaceN == "" || inputLine == "" || inputTurno == "")
                 return Content("<script language='javascript' type='text/javascript'>alert('Одно из полей пусто!');window.location.href = 'Index';</script>");
             else
@@ -109,11 +114,13 @@ namespace PatrinWebLabs.Controllers
                         allData.Add(load);
                         allData.Add(load_def);
                         allData.Add(load_tab);
+                        Logger.Log.Info("Обновлена БД работников");
                         return View("Index", allData);
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
+                    Logger.Log.Error(ex.Message);
                     return Content("<script language='javascript' type='text/javascript'>alert('Ошибка в ходе обновление!');window.location.href = 'Index';</script>");
                 }
 
@@ -121,6 +128,7 @@ namespace PatrinWebLabs.Controllers
         }
         public ActionResult Index(string inputID, string inputName, string inputPlaceN, string inputLine, string inputTurno)
         {
+            Logger.InitLogger();
             if (inputID == "" || inputName == "" || inputPlaceN == "" || inputLine == "" || inputTurno == "")
                 return Content("<script language='javascript' type='text/javascript'>alert('Одно из полей пусто!');window.location.href = 'Index';</script>");
             else
@@ -153,11 +161,13 @@ namespace PatrinWebLabs.Controllers
                         allData.Add(load);
                         allData.Add(load_def);
                         allData.Add(load_tab);
+                        Logger.Log.Info("Добавление работника в БД");
                         return View(allData);
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
+                    Logger.Log.Error(ex.Message);
                     return Content("<script language='javascript' type='text/javascript'>alert('Ошибка в ходе добавления!');window.location.href = 'Index';</script>");
                 }
 
@@ -165,6 +175,7 @@ namespace PatrinWebLabs.Controllers
         }
         public FileContentResult GetChart1()
         {
+            Logger.InitLogger();
             var dates = new List<Tuple<int, string>>(
                   new[]
                          {
@@ -208,6 +219,7 @@ namespace PatrinWebLabs.Controllers
         }
         public FileContentResult GetChart2()
         {
+            Logger.InitLogger();
             var dates = new List<Tuple<int, string>>(
                   new[]
                          {
@@ -363,12 +375,15 @@ namespace PatrinWebLabs.Controllers
 
         public ActionResult FAQ()
         {
+            Logger.InitLogger();
+            Logger.Log.Info("Загружена страница FAQ");
             return View();
         }
 
         [HttpPost]
         public JsonResult AjaxUpdateDefect(string Str, string Str1)
         {
+            Logger.InitLogger();
             string def = Str;
             string date = Str1;
             using (SqlConnection cn = new SqlConnection())
@@ -384,13 +399,14 @@ namespace PatrinWebLabs.Controllers
                 }
                 cn.Close();
             }
+            Logger.Log.Info("Обновлена таблица БД Дефекты");
             return Json("");
         }
 
         [HttpPost]
         public JsonResult AjaxDelete(string Str, string Str2, string Str3, string Str4, string Str5)
         {
-
+            Logger.InitLogger();
             string tmp = Str + " " + Str2 + " " + Str3 + " " + Str4 + " " + Str5;
             string[] substrings = tmp.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             if (tmp.Contains("mp4"))
@@ -406,6 +422,7 @@ namespace PatrinWebLabs.Controllers
                     {
                         inst_delete.DeleteVideos(substrings[i]);
                     }
+                    Logger.Log.Info("Удаление видеофайла");
                     return Json("Удаление " + substrings.Length + " видеофайлов успешно!");
                 }
             }
@@ -422,7 +439,7 @@ namespace PatrinWebLabs.Controllers
                     {
                         inst_delete.DeleteInstruction(substrings[i]);
                     }
-
+                    Logger.Log.Info("Удаление производственной инструкции");
                     return Json("Удаление " + substrings.Length + " инструкций успешно!");
                 }
 
@@ -430,6 +447,7 @@ namespace PatrinWebLabs.Controllers
         }
         public JsonResult AjaxDeleteIndex(string Str, string Str2, string Str3, string Str4, string Str5)
         {
+            Logger.InitLogger();
             string tmp = Str + " " + Str2 + " " + Str3 + " " + Str4 + " " + Str5;
             string[] substrings = tmp.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             if (substrings.Length == 0)
@@ -453,54 +471,129 @@ namespace PatrinWebLabs.Controllers
                     }
                     cn.Close();
                 }
+                Logger.Log.Info("Удален работник из БД");
                 return Json("Удаление работника из базы успешно!");
             }
         }
         public ActionResult Defects(int? page)
         {
-            Defects load_def = new Defects();
+            Logger.InitLogger();
+            ClaimsIdentity user = (ClaimsIdentity)(User.Identity);
+            string type = string.Empty;
+            string right = string.Empty;
 
-            bool check = load_def.CheckNewDefects();
+            IEnumerable<Claim> claims = user.Claims;
 
-            if (check)
+            try
             {
-                ViewBag.Message = "OK";
+                type = claims.ElementAt(4).Type;
+                right = claims.ElementAt(4).Value;
             }
-            ArrayList allData = new ArrayList();
-            load_def.LoadDefects();
+            catch (Exception ex)
+            {
+                Logger.Log.Error("Попытка несанкционированный доступ!"+ex.Message);
+                return Redirect("/Account/Login");
+            }
+            if (type == "Rights" && right == "Администратор" || right=="Работник ОК" || right=="Ремонтная служба")
+            {
+                Defects load_def = new Defects();
+
+                bool check = load_def.CheckNewDefects();
+
+                if (check)
+                {
+                    ViewBag.Message = "OK";
+                }
+                ArrayList allData = new ArrayList();
+                load_def.LoadDefects();
 
 
-            allData.Add(load_def);
-            var model = load_def.Data2.ToList();
+                allData.Add(load_def);
+                var model = load_def.Data2.ToList();
 
-            int pageNumber = page ?? 1;
-            int pageSize = 10;
-
-            return View(model.ToPagedList(pageNumber, pageSize));
+                int pageNumber = page ?? 1;
+                int pageSize = 6;
+                return View(model.ToPagedList(pageNumber, pageSize));
+            }
+            else
+            {
+                return View("ErrorRight");
+            }
+           
         }
         public ActionResult Employees()
         {
-            Employess load = new Employess();
-            ArrayList allData = new ArrayList();
-            load.LoadAllData();
-            allData.Add(load);
-            return View(allData);
+            Logger.InitLogger();
+            ClaimsIdentity user = (ClaimsIdentity)(User.Identity);
+            string type = string.Empty;
+            string right = string.Empty;
+
+            IEnumerable<Claim> claims = user.Claims;
+
+            try
+            {
+                type = claims.ElementAt(4).Type;
+                right = claims.ElementAt(4).Value;
+            }
+            catch (Exception ex)
+            {
+                Logger.Log.Error("Попытка несанкционированный доступ!" + ex.Message);
+                return Redirect("/Account/Login");
+            }
+            if (type == "Rights" && right == "Работник ОК")
+            {
+                Employess load = new Employess();
+                ArrayList allData = new ArrayList();
+                load.LoadAllData();
+                allData.Add(load);
+                return View(allData);
+            }
+            else
+            {
+                return View("ErrorRight");
+            }
+
         }
 
-        [OutputCache(Duration = 30, Location = OutputCacheLocation.Downstream)]
+        //[OutputCache(Duration = 30, Location = OutputCacheLocation.Downstream)]
         public ActionResult InstructionsAndTests()
         {
-            bool check = true;
-            InstructionsVideos load_inst = new InstructionsVideos();
-            ArrayList inst_data = new ArrayList();
-            load_inst.LoadInstructions(check);
-            inst_data.Add(load_inst);
+            Logger.InitLogger();
+            ClaimsIdentity user = (ClaimsIdentity)(User.Identity);
+            string type = string.Empty;
+            string right = string.Empty;
 
-            return View(inst_data);
+            IEnumerable<Claim> claims = user.Claims;
+
+            try
+            {
+                type = claims.ElementAt(4).Type;
+                right = claims.ElementAt(4).Value;
+            }
+            catch (Exception ex)
+            {
+                Logger.Log.Error("Попытка несанкционированный доступ!" + ex.Message);
+                return Redirect("/Account/Login");
+            }
+            if (type == "Rights" && right == "Мастер"|| right=="Работник ОК")
+            {
+                bool check = true;
+                InstructionsVideos load_inst = new InstructionsVideos();
+                ArrayList inst_data = new ArrayList();
+                load_inst.LoadInstructions(check);
+                inst_data.Add(load_inst);
+
+                return View(inst_data);
+            }
+            else
+            {
+                return View("ErrorRight");
+            }
         }
         [HttpPost]
         public ActionResult Upload(HttpPostedFileBase upload, string PlaceN)
         {
+            Logger.InitLogger();
             try
             {
 
@@ -524,10 +617,12 @@ namespace PatrinWebLabs.Controllers
                         cmd = new SqlCommand(string.Format("IF EXISTS (SELECT * FROM Employee WHERE PlaceN = {1}) UPDATE Employee SET VideoURL = {0} WHERE PlaceN={1}", "'" + URL + fileName + "'", placeNumber), connection);
                         cmd.ExecuteNonQuery();
                         System.IO.File.Delete(Server.MapPath("~/TempFiles/" + fileName));
+                        Logger.Log.Info("Загружен файл" + fileName);
                         return Content("<script language='javascript' type='text/javascript'>alert('Файл загружен успешно! Обновите страницу!'); window.location.href = 'InstructionsAndTests' ; </script>");
                     }
                     else
                     {
+                        Logger.Log.Error("Файл не загружен!");
                         return Content("<script language='javascript' type='text/javascript'>alert('Файл еще не загружен или не выбран! Выберите заново! Также укажите № рабочего места!');window.location.href = 'InstructionsAndTests';</script>");
                     }
                 }
@@ -551,23 +646,26 @@ namespace PatrinWebLabs.Controllers
 
                         cmd.ExecuteNonQuery();
                         System.IO.File.Delete(Server.MapPath("~/TempFiles/" + fileName));
+                        Logger.Log.Info("Загружен файл" + fileName);
                         return Content("<script language='javascript' type='text/javascript'>alert('Файл загружен успешно! Обновите страницу!'); window.location.href = 'InstructionsAndTests' ; </script>");
                     }
                     else
                     {
+                        Logger.Log.Error("Файл не загружен!");
                         return Content("<script language='javascript' type='text/javascript'>alert('Файл еще не загружен или не выбран! Выберите заново! Также укажите № рабочего места!');window.location.href = 'InstructionsAndTests';</script>");
                     }
                 }
             }
             catch (Exception ex)
             {
+                Logger.Log.Error("Ошибка загрузки в БД" + ex.Message);
                 return Content("<script language='javascript' type='text/javascript'>alert('Ошибка при загрузке в БД! " + ex.Message + "');window.location.href = 'InstructionsAndTests';</script>");
             }
         }
         [HttpPost]
         public JsonResult GetEmployee(string employeeData)
         {
-
+            Logger.InitLogger();
             string ID = string.Empty;
             string Turno = string.Empty;
             string employeeName = employeeData.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[0] + " " + employeeData.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1];
@@ -595,11 +693,13 @@ namespace PatrinWebLabs.Controllers
                     }
                 }
             }
+            Logger.Log.Info("Загрузка данных о работнике");
             return Json(ID + " " + employeeName + " " + PlaceN + " " + Line + " " + Turno);
         }
         [HttpGet]
         public ActionResult Videos()
         {
+            Logger.InitLogger();
             bool check = false;
             InstructionsVideos load_inst = new InstructionsVideos();
             ArrayList inst_data = new ArrayList();
@@ -610,6 +710,7 @@ namespace PatrinWebLabs.Controllers
 
         public ActionResult Tablets()
         {
+            Logger.InitLogger();
             ArrayList allData = new ArrayList();
             try
             {
@@ -640,7 +741,7 @@ namespace PatrinWebLabs.Controllers
             {
 
             }
-
+            Logger.Log.Info("Выполнен AJAX-запрос, планшеты опрошены");
             return PartialView(allData);
         }
     }

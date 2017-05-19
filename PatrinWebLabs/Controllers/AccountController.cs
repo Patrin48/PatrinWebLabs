@@ -10,9 +10,24 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using PatrinWebLabs.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
 
 namespace PatrinWebLabs.Controllers
 {
+    public class User
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+   
+        class UserContext : DbContext
+        {
+            public UserContext() :
+                base("UserDB")
+            { }
+
+            public DbSet<User> Users { get; set; }
+        }
     [Authorize]
     public class AccountController : Controller
     {
@@ -167,7 +182,14 @@ namespace PatrinWebLabs.Controllers
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Подтверждение учетной записи", "Подтвердите вашу учетную запись, щелкнув <a href=\"" + callbackUrl + "\">здесь</a>");
-
+                    //using (UserContext db = new UserContext())
+                    //{
+                    //    var users = db.Users;
+                    //    foreach (User u in users)
+                    //    {
+                    //        int i = u.Id;
+                    //    }
+                    //}
                     return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);

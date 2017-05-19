@@ -251,6 +251,19 @@ namespace PatrinWebLabs.Controllers
             return View();
         }
 
+        public void ShowLog()
+        {
+            Response.AppendHeader("Content-Disposition", "attachment; filename=Common.log");
+            Response.TransmitFile(Server.MapPath("~/Logs/Common.log"));
+            Response.End();
+        }
+        public void ShowErrors()
+        {
+            
+            Response.AppendHeader("Content-Disposition", "attachment; filename=Error.log");
+            Response.TransmitFile(Server.MapPath("~/Logs/Error.log"));
+            Response.End();
+        }
         //
         // POST: /Manage/SetPassword
         [HttpPost]
