@@ -1,6 +1,17 @@
-﻿using System;
+﻿using Google.Apis.Auth.OAuth2;
+using Google.Apis.Sheets.v4;
+using Google.Apis.Sheets.v4.Data;
+using Google.Apis.Services;
+using Google.Apis.Util.Store;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.IO;
+using System.Net;
+using System.Text;
+using System.Web.Mvc;
+using System.Threading;
+
 
 namespace PatrinWebLabs.Models
 {
@@ -99,7 +110,6 @@ namespace PatrinWebLabs.Models
 
         }
     }
-
     public class Defects
     {
         Defects tmp;
@@ -211,7 +221,6 @@ namespace PatrinWebLabs.Models
             }
         }
     }
-
     public class InstructionsVideos
     {
 
@@ -310,6 +319,116 @@ namespace PatrinWebLabs.Models
                     }
                     cn.Close();
                 }
+            }
+        }
+    }
+    public class Tests
+    {
+        Tests tmp;
+        public List<Tests> Data5 = new List<Tests>();
+        public string TestURL { get; set; }
+        public string EmployeeID { get; set; }
+        public string RightAnswer { get; set; }
+        public string Result { get; set; }
+        public string TestName { get; set; }
+        public string EmployeeName { get; set; }
+        public string TestTableURL { get; set; }
+        public double Persentage { get; set; }
+        public string TableURL { get; set; }
+        public int count { get; set; }
+
+        public void LoadTestResults(string path, string path2, string id)
+        {
+            UserCredential credential;
+            string[] Scopes = { SheetsService.Scope.SpreadsheetsReadonly };
+            string ApplicationName = "WebResults";
+            int rightPercentage = 0;
+            int counter = 1;
+            int numberOfTest = 0;
+            double SumPercent = 0;
+            using (var stream =
+                new FileStream(path, FileMode.Open, FileAccess.Read))
+            {
+               path2= Path.Combine(path2, "credentials/sheets.googleapis.com-dotnet-quickstart.json");
+
+                credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                    GoogleClientSecrets.Load(stream).Secrets,
+                    Scopes,
+                    "user",
+                    CancellationToken.None,
+                    new FileDataStore(path2, true)).Result;
+            }
+            
+            var service = new SheetsService(new BaseClientService.Initializer()
+            {
+                HttpClientInitializer = credential,
+                ApplicationName = ApplicationName,
+            });
+            
+           
+            string scriptComand = "https://script.google.com/macros/s/AKfycbznDBEAC3x5RdItbDoFqHqbDuyzM4nvPdU0UQK-3lQ8/dev?URL=";
+            using (SqlConnection cn = new SqlConnection())
+            {
+                cn.ConnectionString = @"Data Source=patrin.ddns.net,1433;Initial Catalog=OIProject;Persist Security Info=True;User ID=sa;Password=18swlgnm";
+                cn.Open();
+
+                using (SqlCommand command = cn.CreateCommand())
+                {
+
+                    command.CommandText = string.Format("SELECT Tests.TestNum, Tests.TestURL, Tests.TestRightAnswer, Employee.Name, Tests.TestTableURL, COUNT(TestNum) AS 'Количество' FROM Tests, Employee Where Tests.TestNum = Employee.ID AND TestNum="+ id +"GROUP BY TestNum, TestURL, TestRightAnswer, Name, TestTableURL ORDER BY TestNum");
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            tmp = new Tests();
+                            tmp.EmployeeID = (Convert.ToString(reader[0]));
+                            tmp.TestURL = (Convert.ToString(reader[1]));
+                            tmp.RightAnswer = (Convert.ToString(reader[2]));
+                            tmp.EmployeeName = (Convert.ToString(reader[3]));
+                            tmp.TestTableURL = (Convert.ToString(reader[4]));
+                            tmp.count = (Convert.ToInt32(reader[5]));
+                            tmp.TableURL = "https://docs.google.com/spreadsheets/d/" + tmp.TestTableURL;
+                            String spreadsheetId = scriptComand;
+                            String range = "B1:B";
+                            SpreadsheetsResource.ValuesResource.GetRequest request =
+                                    service.Spreadsheets.Values.Get(tmp.TestTableURL, range);
+                            ValueRange response = request.Execute();
+                            IList<IList<Object>> values = response.Values;
+                            tmp.TestName = values[0][0].ToString();
+                            try
+                            {
+                                for (counter=1; counter < values.Count; counter++)
+                                {
+                                    if (values[counter][0].ToString() == tmp.RightAnswer)
+                                    {
+                                        rightPercentage++;
+                                    }
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                counter++;
+                            }
+                            finally
+                            {
+                                for (int i=counter; i< values.Count; i++)
+                                {
+                                    if (values[i][0].ToString() == tmp.RightAnswer)
+                                    {
+                                        rightPercentage++;
+                                    }
+                                }
+                            }
+                            tmp.Persentage = ((double)(rightPercentage * 100) / (values.Count-2));
+                            tmp.Persentage = Math.Round(tmp.Persentage, 0);
+                            SumPercent += tmp.Persentage;
+                            rightPercentage = 0;
+                            Data5.Add(tmp);
+                            numberOfTest++;
+                        }
+                    }
+                }
+                cn.Close();
             }
         }
     }

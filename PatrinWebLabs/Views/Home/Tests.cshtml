@@ -1,16 +1,87 @@
 ﻿@{
-    ViewBag.Title = "Тесты";
+    ViewBag.Title = "Автосертификации";
+    double percentage=0;
+    int numOfTests = 0;
 }
-
+@model System.Collections.ArrayList
 <!DOCTYPE html>
-<html>
+<style>
+    body {
+        background: #E3F2FD;
+    }
+</style>
+
 <head>
+    <style type="text/css">
+        .acc {
+            margin: 20px;
+        }
+
+        .bs-example {
+            margin: 10px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div>
+    <div class="row">
         <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
-            <img src="~/Content/google2bforms.jpg" class="img-rounded"  width="300" height="100">
+            <div class="acc">
+                <div class="panel-group" id="accordion">
+                        @for (int i = 0; i < Model.Count; i++)
+                        {
+                            <div class="bs-example">
+                                <div class="panel panel-default">
+                                    @foreach (var data1 in ((PatrinWebLabs.Models.Tests)Model[i]).Data5)
+                                    {
+                                        <div class="panel-heading">
+                                            @foreach (var data2 in ((PatrinWebLabs.Models.Tests)Model[i]).Data5)
+                                            {
+                                                percentage += data2.Persentage;
+                                                numOfTests++;
+                                            }
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse">№ пропуска: @data1.EmployeeID - @data1.EmployeeName</a>
+                                                <div class="bs-example">
+                                                    <div class="progress progress-striped">
+                                                        <div class="progress-bar active" style="width: @Math.Round((percentage/numOfTests),0)%;">
+                                                            <span class="sr-only"></span>
+                                                            @Math.Round((percentage / numOfTests), 0)% - общий результат
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </h4>
+                                        </div>
+                                        percentage = 0;
+                                        numOfTests = 0;
+                                        break;
+                                    }
+
+
+                                    @foreach (var data in ((PatrinWebLabs.Models.Tests)Model[i]).Data5)
+                                    {
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        Результат автосертификации:
+                                                        <ul>
+                                                            <div class="bs-example">
+                                                                <li>Тест про @data.TestName ; Процент верного прохождения теста:<p><mark> @data.Persentage% </mark></p><a href="@data.TestURL" button type="button" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-ok-sign"></span> Ссылка на тест</a> <a href="@data.TableURL" button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-list-alt"></span> Ссылка на таблицу результатов</a></li>
+                                                            </div>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 </body>
-</html>

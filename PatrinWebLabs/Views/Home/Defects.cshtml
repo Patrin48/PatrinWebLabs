@@ -11,9 +11,22 @@
 
 
 <head>
-
+    <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBJsJa7BC0EFyKuJJk21wJxq8wq5rHyaGA",
+            authDomain: "oiproject-e039e.firebaseapp.com",
+            databaseURL: "https://oiproject-e039e.firebaseio.com",
+            projectId: "oiproject-e039e",
+            storageBucket: "oiproject-e039e.appspot.com",
+            messagingSenderId: "48045347697"
+        };
+        firebase.initializeApp(config);
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link href="@Url.Content("/Content/PagedList.css")" rel="stylesheet"
           type="text/css" />
     <script type="text/javascript">
@@ -25,19 +38,19 @@
                     'Str': align.split(",")[0],
                     'Str1': align.split(",")[5]
                 };
-                    $.ajax({
-                        type: "POST",
-                        url: "/Home/AjaxUpdateDefect",
-                        data: JSON.stringify(test),
-                        contentType: "application/json; charset=utf-8",
-                        dataType: "json",
-                        success: function (data) {
-                            location.reload();
-                        },
-                        error: function () {
-                            location.reload();
-                        }
-                    });
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/AjaxUpdateDefect",
+                    data: JSON.stringify(test),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+                        location.reload();
+                    },
+                    error: function () {
+                        location.reload();
+                    }
+                });
             });
         });
         $(document).ready(function () {
@@ -116,6 +129,35 @@
 
 
 <body>
+    <div class="Modal1">
+        <!-- Modal Contents -->
+        <div id="Modal1" class="modal fade">
+            <!-- class modal and fade -->
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- modal header -->
+                        <button type="button" class="close"
+                                data-dismiss="modal" aria-hidden="true"></button>
+                        <h4 class="modal-title">Оповещение</h4>
+                    </div>
+                    <form method="post" action="~/Home/Notification">
+                        <div class="modal-body">
+                            <p class="dline"><input type="text" name="inputType" class="form-control" placeholder="Тип оповещения" id="inputType">
+                            <p class="dline"><input type="text" name="inputDescription" class="form-control" placeholder="Описание" id="inputDescription">
+</div>
+                        <div class="modal-footer">
+                            <!-- modal footer -->
+                            <div align="left">
+                                <p class="dline"><button type="button" class="btn btn-default" data-dismiss="modal">Отменить</button></p>
+                                <p class="dline"><button type="submit" class="btn btn-primary">Отправить</button></p>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- / .modal-content -->
+            </div> <!-- / .modal-dialog -->
+        </div><!-- / .modal -->
+    </div>
     <form role="search" class="navbar-form navbar-right" style="padding-top:10px">
         <div class="form-group">
             <span class="glyphicon glyphicon-search" style="padding-right:3px"></span><input type="text" placeholder="Поиск дефекта..." class="form-control">
@@ -152,7 +194,7 @@
                                         <td><a class="thumbnail" href=""><img src="http://komplektant.ru/uploads/catalogkomplektant/product/images/1114/1140/original.png?_=3018634914" width="50" height="50" border="0" /><span><img src="http://komplektant.ru/uploads/catalogkomplektant/product/images/1114/1140/original.png?_=3018634914" />Фото отсутствует</span></a></td>
 
                                     }
-                                        <td>@Html.DisplayFor(modelItem => data.DefectName)</td>
+                                    <td>@Html.DisplayFor(modelItem => data.DefectName)</td>
                                     <td>@Html.DisplayFor(modelItem => data.DefectLine)</td>
                                     <td>@Html.DisplayFor(modelItem => data.DefectNameWorkPlace)</td>
                                     <td>@Html.DisplayFor(modelItem => data.DefectTurno)</td>
@@ -193,6 +235,7 @@
         <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
             <a href="" class="btn btn-primary" id="sendmail"><span class="glyphicon glyphicon-envelope"></span> Отправить письмо</a>
             <button type="submit" id="update" name="update" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Подтверждение дефекта</button>
+            <a href="#Modal1" class="btn btn-info" id="notification" data-toggle="modal"><span class="glyphicon glyphicon-exclamation-sign"></span> Отправить оповещение</a>
         </div>
     </div>
 </body>

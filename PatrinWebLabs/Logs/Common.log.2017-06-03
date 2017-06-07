@@ -1,0 +1,622 @@
+2017-06-03 14:06:47,121  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:06:47,275  INFO   Account Login ::1  9a5c971d-4366-42d0-abdc-e7ed4d275e48
+2017-06-03 14:06:47,277  INFO   Account Login ::1  9a5c971d-4366-42d0-abdc-e7ed4d275e48
+2017-06-03 14:06:51,291  INFO   Home Defects ::1  9489610b-fd0e-4482-b4f2-cbf667b3d7c5
+2017-06-03 14:06:51,294  INFO   Home Defects ::1  9489610b-fd0e-4482-b4f2-cbf667b3d7c5
+2017-06-03 14:06:51,320  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:06:51,338  INFO   Account Login ::1  d2f752b4-9807-43aa-956a-7df51c016c24
+2017-06-03 14:06:51,340  INFO   Account Login ::1  d2f752b4-9807-43aa-956a-7df51c016c24
+2017-06-03 14:06:57,164  INFO   Account Login ::1  11800606-2f9d-4899-aefc-76e078043cfd
+2017-06-03 14:06:57,167  INFO   Account Login ::1  11800606-2f9d-4899-aefc-76e078043cfd
+2017-06-03 14:06:57,170  INFO   Account Login ::1  11800606-2f9d-4899-aefc-76e078043cfd
+2017-06-03 14:06:57,173  INFO   Account Login ::1  11800606-2f9d-4899-aefc-76e078043cfd
+2017-06-03 14:06:57,175  INFO   Account Login ::1  11800606-2f9d-4899-aefc-76e078043cfd
+2017-06-03 14:06:57,177  INFO   Account Login ::1  11800606-2f9d-4899-aefc-76e078043cfd
+2017-06-03 14:07:08,273  INFO   Home Index ::1  29a9a06d-fdea-4ebe-9a83-939e378f7de5
+2017-06-03 14:07:08,276  INFO   Home Index ::1  29a9a06d-fdea-4ebe-9a83-939e378f7de5
+2017-06-03 14:07:08,297  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:07:08,312  INFO   Account Login ::1  f724e4a5-b3a6-4d28-84aa-52c8f1a9783c
+2017-06-03 14:07:08,314  INFO   Account Login ::1  f724e4a5-b3a6-4d28-84aa-52c8f1a9783c
+2017-06-03 14:07:09,700  INFO   Home Defects ::1  214a3c15-fc57-4eae-8840-6248c404215f
+2017-06-03 14:07:09,702  INFO   Home Defects ::1  214a3c15-fc57-4eae-8840-6248c404215f
+2017-06-03 14:07:09,726  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:07:09,745  INFO   Account Login ::1  97fba7fe-b7f9-4573-a730-02d6344592b6
+2017-06-03 14:07:09,749  INFO   Account Login ::1  97fba7fe-b7f9-4573-a730-02d6344592b6
+2017-06-03 14:07:10,496  INFO   Home InstructionsAndTests ::1  d1dd62d0-ff8c-422d-bab6-b2a1a0a70b50
+2017-06-03 14:07:10,498  INFO   Home InstructionsAndTests ::1  d1dd62d0-ff8c-422d-bab6-b2a1a0a70b50
+2017-06-03 14:07:10,521  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:07:10,540  INFO   Account Login ::1  6123fd9d-b8ef-443f-be9c-0c5c754b033a
+2017-06-03 14:07:10,543  INFO   Account Login ::1  6123fd9d-b8ef-443f-be9c-0c5c754b033a
+2017-06-03 14:07:11,396  INFO   Home Defects ::1  afc149d9-0eaa-42e5-8403-10ad084056e0
+2017-06-03 14:07:11,398  INFO   Home Defects ::1  afc149d9-0eaa-42e5-8403-10ad084056e0
+2017-06-03 14:07:11,421  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:07:11,439  INFO   Account Login ::1  5dc1cc02-b2d3-4d87-8d96-13a2568a4f1c
+2017-06-03 14:07:11,442  INFO   Account Login ::1  5dc1cc02-b2d3-4d87-8d96-13a2568a4f1c
+2017-06-03 14:07:11,869  INFO   Home Index ::1  2fbfe8bd-f068-4e22-8d9d-578baff28ed4
+2017-06-03 14:07:11,873  INFO   Home Index ::1  2fbfe8bd-f068-4e22-8d9d-578baff28ed4
+2017-06-03 14:07:11,898  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:07:11,916  INFO   Account Login ::1  5728604a-3590-43a1-9a75-3804a890ab21
+2017-06-03 14:07:11,918  INFO   Account Login ::1  5728604a-3590-43a1-9a75-3804a890ab21
+2017-06-03 14:19:46,037  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:19:46,214  INFO   Account Login ::1  ef02efcf-ee40-45ab-9f73-fec5aa762b4f
+2017-06-03 14:19:46,217  INFO   Account Login ::1  ef02efcf-ee40-45ab-9f73-fec5aa762b4f
+2017-06-03 14:40:31,993  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:40:32,124  INFO   Account Login ::1  b4762ff0-05eb-4923-806f-2c959dd8c4bd
+2017-06-03 14:40:32,127  INFO   Account Login ::1  b4762ff0-05eb-4923-806f-2c959dd8c4bd
+2017-06-03 14:41:20,355  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:41:20,495  INFO   Account Login ::1  2a0b20c1-693c-460e-806f-ba5da251d693
+2017-06-03 14:41:20,499  INFO   Account Login ::1  2a0b20c1-693c-460e-806f-ba5da251d693
+2017-06-03 14:41:25,752  INFO   Home SendPostRequest ::1  1c79af8f-44b0-4166-815a-9b79cb139299
+2017-06-03 14:41:25,754  INFO   Home SendPostRequest ::1  1c79af8f-44b0-4166-815a-9b79cb139299
+2017-06-03 14:42:27,554  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:42:27,682  INFO   Account Login ::1  ae741f98-0343-484a-a12e-21c87c0c7b42
+2017-06-03 14:42:27,684  INFO   Account Login ::1  ae741f98-0343-484a-a12e-21c87c0c7b42
+2017-06-03 14:42:32,901  INFO   Home SendPostRequest ::1  0953b62b-9d49-4500-8b9c-0f2389d5604d
+2017-06-03 14:42:32,904  INFO   Home SendPostRequest ::1  0953b62b-9d49-4500-8b9c-0f2389d5604d
+2017-06-03 14:42:43,718  INFO   Home Index ::1  b77c5bb7-a50a-4e20-aec2-46fbe7388876
+2017-06-03 14:42:43,720  INFO   Home Index ::1  b77c5bb7-a50a-4e20-aec2-46fbe7388876
+2017-06-03 14:42:43,742  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:42:43,761  INFO   Account Login ::1  5a2dfd82-9131-4e19-a6d1-0c30379eca7e
+2017-06-03 14:42:43,764  INFO   Account Login ::1  5a2dfd82-9131-4e19-a6d1-0c30379eca7e
+2017-06-03 14:57:38,183  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 14:57:38,331  INFO   Account Login ::1  051e3dc9-b178-4012-8f11-e54cbf694d94
+2017-06-03 14:57:38,334  INFO   Account Login ::1  051e3dc9-b178-4012-8f11-e54cbf694d94
+2017-06-03 14:57:46,620  INFO   Account Login ::1  149b09c9-54ad-4483-9456-ca95aed46648
+2017-06-03 14:57:46,624  INFO   Account Login ::1  149b09c9-54ad-4483-9456-ca95aed46648
+2017-06-03 14:57:46,626  INFO   Account Login ::1  149b09c9-54ad-4483-9456-ca95aed46648
+2017-06-03 14:57:46,628  INFO   Account Login ::1  149b09c9-54ad-4483-9456-ca95aed46648
+2017-06-03 14:57:46,630  INFO   Account Login ::1  149b09c9-54ad-4483-9456-ca95aed46648
+2017-06-03 14:57:46,632  INFO   Account Login ::1  149b09c9-54ad-4483-9456-ca95aed46648
+2017-06-03 18:23:17,393  ERROR Попытка несанкционированный доступ!Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+2017-06-03 18:23:17,537  INFO   Account Login ::1  5ac0bde5-d8d0-42ec-a346-ea2ae669b152
+2017-06-03 18:23:17,539  INFO   Account Login ::1  5ac0bde5-d8d0-42ec-a346-ea2ae669b152
+2017-06-03 18:23:27,094  INFO   Account Login ::1  777a7a32-7071-432b-b285-f65fa572fcc2
+2017-06-03 18:23:27,097  INFO   Account Login ::1  777a7a32-7071-432b-b285-f65fa572fcc2
+2017-06-03 18:23:27,100  INFO   Account Login ::1  777a7a32-7071-432b-b285-f65fa572fcc2
+2017-06-03 18:23:27,103  INFO   Account Login ::1  777a7a32-7071-432b-b285-f65fa572fcc2
+2017-06-03 18:23:27,105  INFO   Account Login ::1  777a7a32-7071-432b-b285-f65fa572fcc2
+2017-06-03 18:23:27,106  INFO   Account Login ::1  777a7a32-7071-432b-b285-f65fa572fcc2
+2017-06-03 18:23:27,903  INFO   Home Index ::1 merenkov_dmitry@mail.ru 0383f4d8-e78a-40b8-b494-4a9b41df23be
+2017-06-03 18:23:27,905  INFO   Home Index ::1 merenkov_dmitry@mail.ru 0383f4d8-e78a-40b8-b494-4a9b41df23be
+2017-06-03 18:23:28,023  INFO  Загружена главная страница
+2017-06-03 18:23:31,340  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 1132f7fe-985a-402c-97f7-10367b789b25
+2017-06-03 18:23:31,343  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 1132f7fe-985a-402c-97f7-10367b789b25
+2017-06-03 18:23:31,432  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 30e87504-2355-4816-9a41-4e4e590b7031
+2017-06-03 18:23:31,435  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 30e87504-2355-4816-9a41-4e4e590b7031
+2017-06-03 18:23:31,462  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 7fe5300a-274a-4824-befb-e8ca0682bbae
+2017-06-03 18:23:31,466  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 7fe5300a-274a-4824-befb-e8ca0682bbae
+2017-06-03 18:23:32,710  INFO   Manage Index ::1 merenkov_dmitry@mail.ru 5f8ebb8d-9929-4b47-8840-ab945779f77b
+2017-06-03 18:23:32,713  INFO   Manage Index ::1 merenkov_dmitry@mail.ru 5f8ebb8d-9929-4b47-8840-ab945779f77b
+2017-06-03 18:23:35,806  INFO   Manage Index ::1 merenkov_dmitry@mail.ru e50a21b1-b3c6-413b-acc5-3c9a9c936793
+2017-06-03 18:23:35,809  INFO   Manage Index ::1 merenkov_dmitry@mail.ru e50a21b1-b3c6-413b-acc5-3c9a9c936793
+2017-06-03 18:23:38,338  INFO   Home Index ::1 merenkov_dmitry@mail.ru 68714b38-2969-4b10-a675-c60c7d4d536e
+2017-06-03 18:23:38,340  INFO   Home Index ::1 merenkov_dmitry@mail.ru 68714b38-2969-4b10-a675-c60c7d4d536e
+2017-06-03 18:23:38,356  INFO  Загружена главная страница
+2017-06-03 18:23:38,417  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 733d597f-b45b-4277-b718-49456f3d538d
+2017-06-03 18:23:38,419  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 733d597f-b45b-4277-b718-49456f3d538d
+2017-06-03 18:23:38,440  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 0350a051-5c08-4eba-8733-bb516c111b30
+2017-06-03 18:23:38,443  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 0350a051-5c08-4eba-8733-bb516c111b30
+2017-06-03 18:23:38,464  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 73070242-d258-403e-a794-5daffc22018e
+2017-06-03 18:23:38,467  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 73070242-d258-403e-a794-5daffc22018e
+2017-06-03 18:25:04,084  INFO  Загружена главная страница
+2017-06-03 18:25:55,630  INFO  Загружена главная страница
+2017-06-03 18:25:59,425  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 1900d142-6681-415f-8053-094e457c0943
+2017-06-03 18:25:59,433  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 1900d142-6681-415f-8053-094e457c0943
+2017-06-03 18:25:59,514  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru d6d392bb-754a-4cc0-b3a4-e44e97081814
+2017-06-03 18:25:59,516  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru d6d392bb-754a-4cc0-b3a4-e44e97081814
+2017-06-03 18:25:59,549  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru c2c9dd2f-a9ad-491d-b708-c49c39e9a070
+2017-06-03 18:25:59,551  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru c2c9dd2f-a9ad-491d-b708-c49c39e9a070
+2017-06-03 18:26:10,949  INFO   Home Defects ::1 merenkov_dmitry@mail.ru d95ce9eb-bab7-4acc-9e29-87c83246ae80
+2017-06-03 18:26:10,952  INFO   Home Defects ::1 merenkov_dmitry@mail.ru d95ce9eb-bab7-4acc-9e29-87c83246ae80
+2017-06-03 18:26:13,949  INFO   Home InstructionsAndTests ::1 merenkov_dmitry@mail.ru b6b5266e-194d-4e7c-b3ad-5c84d18b8c41
+2017-06-03 18:26:13,952  INFO   Home InstructionsAndTests ::1 merenkov_dmitry@mail.ru b6b5266e-194d-4e7c-b3ad-5c84d18b8c41
+2017-06-03 18:26:15,947  INFO   Manage Index ::1 merenkov_dmitry@mail.ru 83db9979-d756-4b19-a816-406097d055c5
+2017-06-03 18:26:15,950  INFO   Manage Index ::1 merenkov_dmitry@mail.ru 83db9979-d756-4b19-a816-406097d055c5
+2017-06-03 18:26:18,310  INFO   Home Index ::1 merenkov_dmitry@mail.ru 5128ddbc-edc4-48d2-8409-f090c02b0bcb
+2017-06-03 18:26:18,313  INFO   Home Index ::1 merenkov_dmitry@mail.ru 5128ddbc-edc4-48d2-8409-f090c02b0bcb
+2017-06-03 18:26:18,328  INFO  Загружена главная страница
+2017-06-03 18:26:18,409  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru c42711cd-fc6a-4854-9151-518a70da3ade
+2017-06-03 18:26:18,412  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru c42711cd-fc6a-4854-9151-518a70da3ade
+2017-06-03 18:26:18,435  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 2201e799-69db-4113-a5a5-c9e80ffde850
+2017-06-03 18:26:18,438  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 2201e799-69db-4113-a5a5-c9e80ffde850
+2017-06-03 18:26:18,478  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru ccadf454-5259-45b6-9831-1efc6193190b
+2017-06-03 18:26:18,481  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru ccadf454-5259-45b6-9831-1efc6193190b
+2017-06-03 18:26:24,916  INFO   Home Tablets ::1 merenkov_dmitry@mail.ru ef1cb318-0c71-409e-a8a0-c8b41272d44a
+2017-06-03 18:26:24,918  INFO   Home Tablets ::1 merenkov_dmitry@mail.ru ef1cb318-0c71-409e-a8a0-c8b41272d44a
+2017-06-03 18:26:24,921  INFO   Home Tablets ::1 merenkov_dmitry@mail.ru ef1cb318-0c71-409e-a8a0-c8b41272d44a
+2017-06-03 18:26:25,789  INFO  Выполнен AJAX-запрос, планшеты опрошены
+2017-06-03 18:30:43,955  INFO  Загружена главная страница
+2017-06-03 18:30:45,950  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 1405e008-e384-4a38-ab69-a38c704c62f4
+2017-06-03 18:30:45,953  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 1405e008-e384-4a38-ab69-a38c704c62f4
+2017-06-03 18:30:46,016  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru a4f4f547-6c88-4548-abb4-d2f83d27a4e7
+2017-06-03 18:30:46,018  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru a4f4f547-6c88-4548-abb4-d2f83d27a4e7
+2017-06-03 18:30:46,043  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 0fab0e01-5a9c-406f-b4b4-076a109ebac6
+2017-06-03 18:30:46,045  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 0fab0e01-5a9c-406f-b4b4-076a109ebac6
+2017-06-03 18:31:08,597  INFO  Загружена главная страница
+2017-06-03 18:31:12,778  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru ad09d416-e8f8-47d8-bc49-3c84adde26b7
+2017-06-03 18:31:12,781  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru ad09d416-e8f8-47d8-bc49-3c84adde26b7
+2017-06-03 18:31:12,863  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 887b2eb5-9563-434d-9997-f4ab9a7514ed
+2017-06-03 18:31:12,865  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 887b2eb5-9563-434d-9997-f4ab9a7514ed
+2017-06-03 18:31:12,894  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 0f0f0385-be98-4f26-80bf-456b84f739c1
+2017-06-03 18:31:12,896  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 0f0f0385-be98-4f26-80bf-456b84f739c1
+2017-06-03 18:31:19,848  INFO   Home Tablets ::1 merenkov_dmitry@mail.ru 826eaf64-8bae-4302-be88-774e83093051
+2017-06-03 18:31:19,851  INFO   Home Tablets ::1 merenkov_dmitry@mail.ru 826eaf64-8bae-4302-be88-774e83093051
+2017-06-03 18:31:19,853  INFO   Home Tablets ::1 merenkov_dmitry@mail.ru 826eaf64-8bae-4302-be88-774e83093051
+2017-06-03 18:31:20,789  INFO  Выполнен AJAX-запрос, планшеты опрошены
+2017-06-03 18:31:25,728  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 199104b9-25e1-43b3-9070-5a18658018f0
+2017-06-03 18:31:25,731  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 199104b9-25e1-43b3-9070-5a18658018f0
+2017-06-03 18:31:27,608  INFO   Home InstructionsAndTests ::1 merenkov_dmitry@mail.ru 4bcbc36a-2f47-4102-91e2-8bc6fc2d8831
+2017-06-03 18:31:27,611  INFO   Home InstructionsAndTests ::1 merenkov_dmitry@mail.ru 4bcbc36a-2f47-4102-91e2-8bc6fc2d8831
+2017-06-03 18:31:29,206  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 7a616485-aacc-4bbc-9c34-5927169cefe4
+2017-06-03 18:31:29,210  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 7a616485-aacc-4bbc-9c34-5927169cefe4
+2017-06-03 18:31:41,203  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 7c0ab7c2-68ab-4198-984c-b2b183e3fcac
+2017-06-03 18:31:41,207  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 7c0ab7c2-68ab-4198-984c-b2b183e3fcac
+2017-06-03 18:31:41,209  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 7c0ab7c2-68ab-4198-984c-b2b183e3fcac
+2017-06-03 18:31:43,325  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 947d99cf-95e2-4017-98af-89d5677e58cd
+2017-06-03 18:31:43,328  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 947d99cf-95e2-4017-98af-89d5677e58cd
+2017-06-03 18:31:43,331  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 947d99cf-95e2-4017-98af-89d5677e58cd
+2017-06-03 18:31:45,560  INFO   Home Defects ::1 merenkov_dmitry@mail.ru cea9a85b-8a7b-48a3-bb68-0bd67386e053
+2017-06-03 18:31:45,563  INFO   Home Defects ::1 merenkov_dmitry@mail.ru cea9a85b-8a7b-48a3-bb68-0bd67386e053
+2017-06-03 18:31:45,565  INFO   Home Defects ::1 merenkov_dmitry@mail.ru cea9a85b-8a7b-48a3-bb68-0bd67386e053
+2017-06-03 18:31:47,179  INFO   Home Defects ::1 merenkov_dmitry@mail.ru d8b4b809-525b-4bb8-9c16-fe2647afbd80
+2017-06-03 18:31:47,182  INFO   Home Defects ::1 merenkov_dmitry@mail.ru d8b4b809-525b-4bb8-9c16-fe2647afbd80
+2017-06-03 18:31:47,184  INFO   Home Defects ::1 merenkov_dmitry@mail.ru d8b4b809-525b-4bb8-9c16-fe2647afbd80
+2017-06-03 18:40:58,941  INFO  Загружена главная страница
+2017-06-03 18:41:00,975  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru cb010b0f-58c5-4739-a31d-9abc8fba5771
+2017-06-03 18:41:00,979  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru cb010b0f-58c5-4739-a31d-9abc8fba5771
+2017-06-03 18:41:01,041  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 375bc265-d7d2-4bfa-be92-38ad7479516d
+2017-06-03 18:41:01,044  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 375bc265-d7d2-4bfa-be92-38ad7479516d
+2017-06-03 18:41:01,069  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru d66d0121-6405-4ff2-b1de-51ab2cf81947
+2017-06-03 18:41:01,071  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru d66d0121-6405-4ff2-b1de-51ab2cf81947
+2017-06-03 18:41:02,718  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 78141c88-4d64-4aa4-ba72-3e9e96c2b326
+2017-06-03 18:41:02,722  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 78141c88-4d64-4aa4-ba72-3e9e96c2b326
+2017-06-03 18:41:09,488  INFO   Home Index ::1 merenkov_dmitry@mail.ru a5055397-2b31-4a06-b85d-57c179f45f7e
+2017-06-03 18:41:09,491  INFO   Home Index ::1 merenkov_dmitry@mail.ru a5055397-2b31-4a06-b85d-57c179f45f7e
+2017-06-03 18:41:09,507  INFO  Загружена главная страница
+2017-06-03 18:41:09,583  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 3ef16749-55a7-492a-b8ed-22d3f5589886
+2017-06-03 18:41:09,585  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 3ef16749-55a7-492a-b8ed-22d3f5589886
+2017-06-03 18:41:09,612  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 008c9210-470a-44ab-812a-98590f088c83
+2017-06-03 18:41:09,616  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 008c9210-470a-44ab-812a-98590f088c83
+2017-06-03 18:41:09,641  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 975c1390-0549-448e-8404-a9cca4c3101d
+2017-06-03 18:41:09,643  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 975c1390-0549-448e-8404-a9cca4c3101d
+2017-06-03 18:41:42,334  INFO  Загружена главная страница
+2017-06-03 18:41:43,180  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru f2ae25b2-dc95-44c3-9556-80f57ab3b5ee
+2017-06-03 18:41:43,183  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru f2ae25b2-dc95-44c3-9556-80f57ab3b5ee
+2017-06-03 18:41:43,255  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 3c0fc6bc-acaf-41d9-9ac9-642a194598c4
+2017-06-03 18:41:43,258  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 3c0fc6bc-acaf-41d9-9ac9-642a194598c4
+2017-06-03 18:41:43,282  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru b14ef43c-5839-4171-9200-74dc80235be3
+2017-06-03 18:41:43,285  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru b14ef43c-5839-4171-9200-74dc80235be3
+2017-06-03 18:41:47,394  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 3f36b087-485b-4614-b66a-ca45b4ad7267
+2017-06-03 18:41:47,397  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 3f36b087-485b-4614-b66a-ca45b4ad7267
+2017-06-03 18:42:19,998  INFO   Home Index ::1 merenkov_dmitry@mail.ru af428aae-56fc-44e7-b9bd-326e1fd09be2
+2017-06-03 18:42:20,002  INFO   Home Index ::1 merenkov_dmitry@mail.ru af428aae-56fc-44e7-b9bd-326e1fd09be2
+2017-06-03 18:42:20,018  INFO  Загружена главная страница
+2017-06-03 18:42:20,089  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru d9e91219-3ce1-4ad2-9366-6329954c5780
+2017-06-03 18:42:20,104  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru d9e91219-3ce1-4ad2-9366-6329954c5780
+2017-06-03 18:42:20,126  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 52fa09b7-f466-4d00-a709-4161ca5aa97c
+2017-06-03 18:42:20,129  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 52fa09b7-f466-4d00-a709-4161ca5aa97c
+2017-06-03 18:42:20,156  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 8a188552-27f3-498b-9278-a128b604e1c5
+2017-06-03 18:42:20,159  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 8a188552-27f3-498b-9278-a128b604e1c5
+2017-06-03 18:42:25,484  INFO   Home GetEmployee ::1 merenkov_dmitry@mail.ru 3d62b7a2-1445-45b6-a111-2bf1827bb338
+2017-06-03 18:42:25,487  INFO   Home GetEmployee ::1 merenkov_dmitry@mail.ru 3d62b7a2-1445-45b6-a111-2bf1827bb338
+2017-06-03 18:42:25,519  INFO  Загрузка данных о работнике
+2017-06-03 18:42:41,689  INFO   Home Tablets ::1 merenkov_dmitry@mail.ru 21a2a2e2-4b87-4561-bfe8-f5676d3f4cf8
+2017-06-03 18:42:41,692  INFO   Home Tablets ::1 merenkov_dmitry@mail.ru 21a2a2e2-4b87-4561-bfe8-f5676d3f4cf8
+2017-06-03 18:42:41,694  INFO   Home Tablets ::1 merenkov_dmitry@mail.ru 21a2a2e2-4b87-4561-bfe8-f5676d3f4cf8
+2017-06-03 18:42:41,708  INFO  Выполнен AJAX-запрос, планшеты опрошены
+2017-06-03 18:42:55,483  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 1caa538c-f99a-4d42-a703-b764ed3fed6a
+2017-06-03 18:42:55,486  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 1caa538c-f99a-4d42-a703-b764ed3fed6a
+2017-06-03 18:43:50,359  INFO  Загружена главная страница
+2017-06-03 18:43:51,213  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru bb372407-2250-42c3-bb8f-af9d73066c97
+2017-06-03 18:43:51,215  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru bb372407-2250-42c3-bb8f-af9d73066c97
+2017-06-03 18:43:51,298  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 84f24e6e-7ee3-4703-8143-79164189414b
+2017-06-03 18:43:51,301  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 84f24e6e-7ee3-4703-8143-79164189414b
+2017-06-03 18:43:51,323  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 3eb270ab-f3d6-429c-b6ff-4777d85ab27f
+2017-06-03 18:43:51,326  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 3eb270ab-f3d6-429c-b6ff-4777d85ab27f
+2017-06-03 18:43:52,561  INFO   Home Defects ::1 merenkov_dmitry@mail.ru b2481a66-1701-4e9f-9a9c-e6a88caf4078
+2017-06-03 18:43:52,563  INFO   Home Defects ::1 merenkov_dmitry@mail.ru b2481a66-1701-4e9f-9a9c-e6a88caf4078
+2017-06-03 18:49:02,639  INFO  Загружена главная страница
+2017-06-03 18:49:03,431  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru e3883036-f828-4fed-8ca3-d281e51ff11d
+2017-06-03 18:49:03,435  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru e3883036-f828-4fed-8ca3-d281e51ff11d
+2017-06-03 18:49:03,532  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 4c381bf6-7509-426a-8cbb-89420e286aca
+2017-06-03 18:49:03,535  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 4c381bf6-7509-426a-8cbb-89420e286aca
+2017-06-03 18:49:03,562  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 2249282c-2c80-411f-bafd-3d01c58e5b4a
+2017-06-03 18:49:03,564  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 2249282c-2c80-411f-bafd-3d01c58e5b4a
+2017-06-03 18:49:05,151  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 97f9f5bf-db7c-409c-a58d-b1567437620a
+2017-06-03 18:49:05,153  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 97f9f5bf-db7c-409c-a58d-b1567437620a
+2017-06-03 19:00:30,216  INFO  Загружена главная страница
+2017-06-03 19:00:32,348  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru d07c0de0-28ab-422f-8b7d-376a2819cd8a
+2017-06-03 19:00:32,351  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru d07c0de0-28ab-422f-8b7d-376a2819cd8a
+2017-06-03 19:00:32,411  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 63ec9875-1609-473f-9045-afc5fde09576
+2017-06-03 19:00:32,414  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 63ec9875-1609-473f-9045-afc5fde09576
+2017-06-03 19:00:32,437  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 37325662-104e-4e54-a0b2-57f300a75b96
+2017-06-03 19:00:32,439  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 37325662-104e-4e54-a0b2-57f300a75b96
+2017-06-03 19:00:33,707  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 1cba94d7-6a12-4d73-a561-73b15e4226c6
+2017-06-03 19:00:33,710  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 1cba94d7-6a12-4d73-a561-73b15e4226c6
+2017-06-03 19:00:36,328  INFO   Home Notification ::1 merenkov_dmitry@mail.ru f03360d5-6375-4b74-bf43-58c25ef578f8
+2017-06-03 19:00:36,331  INFO   Home Notification ::1 merenkov_dmitry@mail.ru f03360d5-6375-4b74-bf43-58c25ef578f8
+2017-06-03 19:00:36,333  INFO   Home Notification ::1 merenkov_dmitry@mail.ru f03360d5-6375-4b74-bf43-58c25ef578f8
+2017-06-03 19:00:36,334  INFO   Home Notification ::1 merenkov_dmitry@mail.ru f03360d5-6375-4b74-bf43-58c25ef578f8
+2017-06-03 19:00:39,012  INFO   Home Index ::1 merenkov_dmitry@mail.ru cafd4833-078a-4dc9-977e-bb4a3467614e
+2017-06-03 19:00:39,015  INFO   Home Index ::1 merenkov_dmitry@mail.ru cafd4833-078a-4dc9-977e-bb4a3467614e
+2017-06-03 19:00:39,033  INFO  Загружена главная страница
+2017-06-03 19:00:39,074  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 1a7e5d67-702d-44c4-befa-971e4ea250f6
+2017-06-03 19:00:39,078  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 1a7e5d67-702d-44c4-befa-971e4ea250f6
+2017-06-03 19:00:39,103  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru cb3dd269-18a4-44f5-a98f-05f01c2a3c65
+2017-06-03 19:00:39,106  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru cb3dd269-18a4-44f5-a98f-05f01c2a3c65
+2017-06-03 19:00:39,128  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 3e0e1c36-435a-460d-a25a-51ed6c1d3c04
+2017-06-03 19:00:39,131  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 3e0e1c36-435a-460d-a25a-51ed6c1d3c04
+2017-06-03 19:03:39,386  INFO  Загружена главная страница
+2017-06-03 19:03:41,425  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 8b707f8f-a227-4fb3-be2a-daec1fc3c56f
+2017-06-03 19:03:41,431  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 8b707f8f-a227-4fb3-be2a-daec1fc3c56f
+2017-06-03 19:03:41,489  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru dd850a11-ba57-485d-b7e4-06145d7fa90a
+2017-06-03 19:03:41,491  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru dd850a11-ba57-485d-b7e4-06145d7fa90a
+2017-06-03 19:03:41,516  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 7cddba80-6397-41e8-93c5-3e94260899a2
+2017-06-03 19:03:41,519  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 7cddba80-6397-41e8-93c5-3e94260899a2
+2017-06-03 19:03:42,472  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 2e0a159e-2caa-4f7a-8cd1-c362052e5dd5
+2017-06-03 19:03:42,475  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 2e0a159e-2caa-4f7a-8cd1-c362052e5dd5
+2017-06-03 19:03:44,914  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 650e8093-d4ab-4d92-aaba-140693a490b8
+2017-06-03 19:03:44,918  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 650e8093-d4ab-4d92-aaba-140693a490b8
+2017-06-03 19:03:44,920  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 650e8093-d4ab-4d92-aaba-140693a490b8
+2017-06-03 19:03:44,923  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 650e8093-d4ab-4d92-aaba-140693a490b8
+2017-06-03 19:03:47,733  INFO   Home Index ::1 merenkov_dmitry@mail.ru 0f77e40f-021c-42e9-8e14-0b70fd33de6f
+2017-06-03 19:03:47,736  INFO   Home Index ::1 merenkov_dmitry@mail.ru 0f77e40f-021c-42e9-8e14-0b70fd33de6f
+2017-06-03 19:03:47,756  INFO  Загружена главная страница
+2017-06-03 19:03:47,798  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 0b68dc52-1ac0-4413-98d7-84a94fef39f0
+2017-06-03 19:03:47,801  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 0b68dc52-1ac0-4413-98d7-84a94fef39f0
+2017-06-03 19:03:47,824  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru c50123e8-f25a-43bd-85e6-f8da2fbd4315
+2017-06-03 19:03:47,827  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru c50123e8-f25a-43bd-85e6-f8da2fbd4315
+2017-06-03 19:03:47,848  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 61b71ed4-0f89-4ab3-a2a6-d21515201fc9
+2017-06-03 19:03:47,850  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 61b71ed4-0f89-4ab3-a2a6-d21515201fc9
+2017-06-03 19:04:35,701  INFO  Загружена главная страница
+2017-06-03 19:04:37,731  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 90575fcc-4b85-497c-9b79-2fd20d7a030a
+2017-06-03 19:04:37,734  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 90575fcc-4b85-497c-9b79-2fd20d7a030a
+2017-06-03 19:04:37,797  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru fb9f85c7-bad1-471a-8f61-8e1deae6da17
+2017-06-03 19:04:37,800  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru fb9f85c7-bad1-471a-8f61-8e1deae6da17
+2017-06-03 19:04:37,827  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru df9c5287-6f6e-4567-868b-411452181fc8
+2017-06-03 19:04:37,830  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru df9c5287-6f6e-4567-868b-411452181fc8
+2017-06-03 19:04:38,817  INFO   Home Defects ::1 merenkov_dmitry@mail.ru d22d5c1f-c028-4a16-9149-2e4fe2a3763f
+2017-06-03 19:04:38,819  INFO   Home Defects ::1 merenkov_dmitry@mail.ru d22d5c1f-c028-4a16-9149-2e4fe2a3763f
+2017-06-03 19:04:41,497  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 9f66e80a-b077-4188-b9c6-6f92eba82789
+2017-06-03 19:04:41,499  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 9f66e80a-b077-4188-b9c6-6f92eba82789
+2017-06-03 19:04:41,502  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 9f66e80a-b077-4188-b9c6-6f92eba82789
+2017-06-03 19:04:41,504  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 9f66e80a-b077-4188-b9c6-6f92eba82789
+2017-06-03 19:06:14,860  INFO  Загружена главная страница
+2017-06-03 19:06:16,841  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 9ea18b49-360f-4405-bc2b-7d7d6b7ec198
+2017-06-03 19:06:16,848  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 9ea18b49-360f-4405-bc2b-7d7d6b7ec198
+2017-06-03 19:06:16,906  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 8d5fc6e4-5f6d-4191-a0cf-49cf19a353a9
+2017-06-03 19:06:16,909  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 8d5fc6e4-5f6d-4191-a0cf-49cf19a353a9
+2017-06-03 19:06:16,933  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 9e068221-a211-4daf-9d7c-b3e19e110e0b
+2017-06-03 19:06:16,936  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 9e068221-a211-4daf-9d7c-b3e19e110e0b
+2017-06-03 19:06:18,173  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 69ccfc1a-dced-489c-8710-c46edee52562
+2017-06-03 19:06:18,175  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 69ccfc1a-dced-489c-8710-c46edee52562
+2017-06-03 19:06:20,980  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 191d5d0d-91ee-40d0-92ae-208bd276d09b
+2017-06-03 19:06:20,983  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 191d5d0d-91ee-40d0-92ae-208bd276d09b
+2017-06-03 19:06:20,985  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 191d5d0d-91ee-40d0-92ae-208bd276d09b
+2017-06-03 19:06:20,988  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 191d5d0d-91ee-40d0-92ae-208bd276d09b
+2017-06-03 19:08:34,506  INFO  Загружена главная страница
+2017-06-03 19:08:36,547  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru abdda222-f241-4323-9737-f82390e36f49
+2017-06-03 19:08:36,550  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru abdda222-f241-4323-9737-f82390e36f49
+2017-06-03 19:08:36,609  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 72baf2c8-fc6f-4d18-8b32-0e140a9003cc
+2017-06-03 19:08:36,612  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 72baf2c8-fc6f-4d18-8b32-0e140a9003cc
+2017-06-03 19:08:36,635  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 2bbce1b3-3d89-4939-b83d-27a34c0012cc
+2017-06-03 19:08:36,637  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 2bbce1b3-3d89-4939-b83d-27a34c0012cc
+2017-06-03 19:08:38,857  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 460469b8-3b80-411e-9f4e-eec491ce438b
+2017-06-03 19:08:38,860  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 460469b8-3b80-411e-9f4e-eec491ce438b
+2017-06-03 19:08:41,337  INFO   Home Notification ::1 merenkov_dmitry@mail.ru c5a50bee-2b3f-4920-9374-4f6ddccb9e46
+2017-06-03 19:08:41,339  INFO   Home Notification ::1 merenkov_dmitry@mail.ru c5a50bee-2b3f-4920-9374-4f6ddccb9e46
+2017-06-03 19:08:41,341  INFO   Home Notification ::1 merenkov_dmitry@mail.ru c5a50bee-2b3f-4920-9374-4f6ddccb9e46
+2017-06-03 19:08:41,343  INFO   Home Notification ::1 merenkov_dmitry@mail.ru c5a50bee-2b3f-4920-9374-4f6ddccb9e46
+2017-06-03 19:10:05,658  INFO  Загружена главная страница
+2017-06-03 19:10:07,688  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 8c8d5bae-d0f7-4cab-b504-d9acc1aa2a42
+2017-06-03 19:10:07,691  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 8c8d5bae-d0f7-4cab-b504-d9acc1aa2a42
+2017-06-03 19:10:07,750  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 08660829-a400-48df-a55d-39e55244fcd5
+2017-06-03 19:10:07,752  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 08660829-a400-48df-a55d-39e55244fcd5
+2017-06-03 19:10:07,775  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 7b63a01f-5cd4-477b-9fef-d68e034ff480
+2017-06-03 19:10:07,777  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 7b63a01f-5cd4-477b-9fef-d68e034ff480
+2017-06-03 19:10:24,298  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 30e0070b-cb9c-420d-82d1-f80b0854b0e9
+2017-06-03 19:10:24,300  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 30e0070b-cb9c-420d-82d1-f80b0854b0e9
+2017-06-03 19:10:27,031  INFO   Home Notification ::1 merenkov_dmitry@mail.ru d2b44027-1d7c-4c35-a103-13c97b847d9d
+2017-06-03 19:10:27,033  INFO   Home Notification ::1 merenkov_dmitry@mail.ru d2b44027-1d7c-4c35-a103-13c97b847d9d
+2017-06-03 19:10:27,036  INFO   Home Notification ::1 merenkov_dmitry@mail.ru d2b44027-1d7c-4c35-a103-13c97b847d9d
+2017-06-03 19:10:27,039  INFO   Home Notification ::1 merenkov_dmitry@mail.ru d2b44027-1d7c-4c35-a103-13c97b847d9d
+2017-06-03 19:12:43,482  INFO  Загружена главная страница
+2017-06-03 19:12:45,602  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 8e12a1d0-c8fe-462b-b53c-15982211d93e
+2017-06-03 19:12:45,609  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 8e12a1d0-c8fe-462b-b53c-15982211d93e
+2017-06-03 19:12:45,669  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru f93c398b-a2cc-4bbe-a098-fb6a9ec44645
+2017-06-03 19:12:45,675  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru f93c398b-a2cc-4bbe-a098-fb6a9ec44645
+2017-06-03 19:12:45,703  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 23ab03dd-7603-46b8-882c-c85b1d57e1e9
+2017-06-03 19:12:45,706  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 23ab03dd-7603-46b8-882c-c85b1d57e1e9
+2017-06-03 19:12:47,049  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 852260d9-4f07-45d3-a8bc-156757a4995b
+2017-06-03 19:12:47,054  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 852260d9-4f07-45d3-a8bc-156757a4995b
+2017-06-03 19:12:49,369  INFO   Home Notification ::1 merenkov_dmitry@mail.ru ce0307ad-2272-4160-a3c4-c80535d399eb
+2017-06-03 19:12:49,371  INFO   Home Notification ::1 merenkov_dmitry@mail.ru ce0307ad-2272-4160-a3c4-c80535d399eb
+2017-06-03 19:12:49,373  INFO   Home Notification ::1 merenkov_dmitry@mail.ru ce0307ad-2272-4160-a3c4-c80535d399eb
+2017-06-03 19:12:49,375  INFO   Home Notification ::1 merenkov_dmitry@mail.ru ce0307ad-2272-4160-a3c4-c80535d399eb
+2017-06-03 19:13:29,854  INFO  Загружена главная страница
+2017-06-03 19:13:32,064  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 8b1862cd-3d59-4379-804a-6c9a50ded91b
+2017-06-03 19:13:32,072  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 8b1862cd-3d59-4379-804a-6c9a50ded91b
+2017-06-03 19:13:32,137  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 0a5eda0f-e7a7-424e-87ad-656fffad4677
+2017-06-03 19:13:32,140  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 0a5eda0f-e7a7-424e-87ad-656fffad4677
+2017-06-03 19:13:32,166  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 27bf71fe-bd63-49ca-b73a-e7b29f6dcbee
+2017-06-03 19:13:32,169  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 27bf71fe-bd63-49ca-b73a-e7b29f6dcbee
+2017-06-03 19:13:35,309  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 76d7276c-c4f1-49b0-a82e-e0e3293ee23b
+2017-06-03 19:13:35,312  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 76d7276c-c4f1-49b0-a82e-e0e3293ee23b
+2017-06-03 19:13:38,380  INFO   Home Notification ::1 merenkov_dmitry@mail.ru f9912550-d867-4449-822c-21e214c6a6db
+2017-06-03 19:13:38,382  INFO   Home Notification ::1 merenkov_dmitry@mail.ru f9912550-d867-4449-822c-21e214c6a6db
+2017-06-03 19:13:38,385  INFO   Home Notification ::1 merenkov_dmitry@mail.ru f9912550-d867-4449-822c-21e214c6a6db
+2017-06-03 19:13:38,387  INFO   Home Notification ::1 merenkov_dmitry@mail.ru f9912550-d867-4449-822c-21e214c6a6db
+2017-06-03 19:21:41,043  INFO  Загружена главная страница
+2017-06-03 19:21:43,199  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru a1459cd8-6c1c-46e8-a53c-a57cb4dc9a1c
+2017-06-03 19:21:43,202  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru a1459cd8-6c1c-46e8-a53c-a57cb4dc9a1c
+2017-06-03 19:21:43,273  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 92a5f2ad-2be1-4806-a4db-dabd3c5b3462
+2017-06-03 19:21:43,276  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 92a5f2ad-2be1-4806-a4db-dabd3c5b3462
+2017-06-03 19:21:43,299  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 5d7fe89e-34e8-4fc8-985a-c97479872ebd
+2017-06-03 19:21:43,302  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 5d7fe89e-34e8-4fc8-985a-c97479872ebd
+2017-06-03 19:21:47,512  INFO   Home Defects ::1 merenkov_dmitry@mail.ru a433d4e5-cc64-4812-9bec-7a3a355c6f17
+2017-06-03 19:21:47,515  INFO   Home Defects ::1 merenkov_dmitry@mail.ru a433d4e5-cc64-4812-9bec-7a3a355c6f17
+2017-06-03 19:21:49,920  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 127fe597-cd66-44c2-bdfb-7dae5c770dcb
+2017-06-03 19:21:49,922  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 127fe597-cd66-44c2-bdfb-7dae5c770dcb
+2017-06-03 19:21:49,925  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 127fe597-cd66-44c2-bdfb-7dae5c770dcb
+2017-06-03 19:21:49,927  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 127fe597-cd66-44c2-bdfb-7dae5c770dcb
+2017-06-03 19:24:27,166  INFO  Загружена главная страница
+2017-06-03 19:24:29,417  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru bde1ba40-8948-4f06-9ca7-dc9602ed76cc
+2017-06-03 19:24:29,420  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru bde1ba40-8948-4f06-9ca7-dc9602ed76cc
+2017-06-03 19:24:29,473  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 26bd7ff4-6d36-4b91-b51c-febda73be0d0
+2017-06-03 19:24:29,476  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 26bd7ff4-6d36-4b91-b51c-febda73be0d0
+2017-06-03 19:24:29,497  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 6d3f57de-ec5d-44cf-ba43-0844d06595de
+2017-06-03 19:24:29,500  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 6d3f57de-ec5d-44cf-ba43-0844d06595de
+2017-06-03 19:24:32,598  INFO   Home Defects ::1 merenkov_dmitry@mail.ru e6e6843a-6f79-4858-b96a-f5735f0636f5
+2017-06-03 19:24:32,601  INFO   Home Defects ::1 merenkov_dmitry@mail.ru e6e6843a-6f79-4858-b96a-f5735f0636f5
+2017-06-03 19:24:35,245  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 5b7e4c8c-9a42-48a0-b266-8f4774c8719e
+2017-06-03 19:24:35,248  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 5b7e4c8c-9a42-48a0-b266-8f4774c8719e
+2017-06-03 19:24:35,251  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 5b7e4c8c-9a42-48a0-b266-8f4774c8719e
+2017-06-03 19:24:35,253  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 5b7e4c8c-9a42-48a0-b266-8f4774c8719e
+2017-06-03 19:24:42,996  INFO   Home Index ::1 merenkov_dmitry@mail.ru fb6e077b-064b-4ffe-b8e2-cefef3d83cf1
+2017-06-03 19:24:43,000  INFO   Home Index ::1 merenkov_dmitry@mail.ru fb6e077b-064b-4ffe-b8e2-cefef3d83cf1
+2017-06-03 19:24:43,017  INFO  Загружена главная страница
+2017-06-03 19:24:43,060  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 20e5f13b-4b8e-4134-8bd7-7ede72dec10e
+2017-06-03 19:24:43,063  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 20e5f13b-4b8e-4134-8bd7-7ede72dec10e
+2017-06-03 19:24:43,087  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru ced66f9e-0b3e-439f-810c-44f536fd97df
+2017-06-03 19:24:43,092  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru ced66f9e-0b3e-439f-810c-44f536fd97df
+2017-06-03 19:24:43,115  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru f1952d5b-e0cf-4dd8-8030-12a198f10998
+2017-06-03 19:24:43,118  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru f1952d5b-e0cf-4dd8-8030-12a198f10998
+2017-06-03 19:25:08,203  INFO  Загружена главная страница
+2017-06-03 19:25:09,065  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru a45b9b07-3693-42b6-b22a-df2bbc5aeae7
+2017-06-03 19:25:09,068  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru a45b9b07-3693-42b6-b22a-df2bbc5aeae7
+2017-06-03 19:25:09,135  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru e8a53ebe-1808-4538-beaa-43d034e1bcf8
+2017-06-03 19:25:09,139  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru e8a53ebe-1808-4538-beaa-43d034e1bcf8
+2017-06-03 19:25:09,163  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru b5b28322-4eee-4a7b-b255-a43cb0abdbaf
+2017-06-03 19:25:09,169  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru b5b28322-4eee-4a7b-b255-a43cb0abdbaf
+2017-06-03 19:25:10,986  INFO   Home Defects ::1 merenkov_dmitry@mail.ru ed69efdc-bde7-4202-8e98-2be09b688a36
+2017-06-03 19:25:10,989  INFO   Home Defects ::1 merenkov_dmitry@mail.ru ed69efdc-bde7-4202-8e98-2be09b688a36
+2017-06-03 19:25:13,414  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 46e9f530-b98f-4b7f-b1d8-9379ba861c58
+2017-06-03 19:25:13,417  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 46e9f530-b98f-4b7f-b1d8-9379ba861c58
+2017-06-03 19:25:13,420  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 46e9f530-b98f-4b7f-b1d8-9379ba861c58
+2017-06-03 19:25:13,423  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 46e9f530-b98f-4b7f-b1d8-9379ba861c58
+2017-06-03 19:26:53,119  INFO  Загружена главная страница
+2017-06-03 19:26:53,986  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru d8fcfdf0-ab24-45e5-9717-dd4f9fd90cd8
+2017-06-03 19:26:53,990  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru d8fcfdf0-ab24-45e5-9717-dd4f9fd90cd8
+2017-06-03 19:26:54,076  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 99c5c8c6-e857-4faf-8c42-d98a3c448f24
+2017-06-03 19:26:54,079  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 99c5c8c6-e857-4faf-8c42-d98a3c448f24
+2017-06-03 19:26:54,093  INFO   Home Index ::1 merenkov_dmitry@mail.ru 910f081f-3aa9-49a2-b2df-e1f1dac789eb
+2017-06-03 19:26:54,099  INFO   Home Index ::1 merenkov_dmitry@mail.ru 910f081f-3aa9-49a2-b2df-e1f1dac789eb
+2017-06-03 19:26:54,123  INFO  Загружена главная страница
+2017-06-03 19:26:54,124  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 5e1c8b65-d4f5-4c6f-aa9f-5528aa90d69a
+2017-06-03 19:26:54,130  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 5e1c8b65-d4f5-4c6f-aa9f-5528aa90d69a
+2017-06-03 19:26:54,196  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru b595742a-c5f2-4f6d-a569-02b8b511ecf1
+2017-06-03 19:26:54,200  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru b595742a-c5f2-4f6d-a569-02b8b511ecf1
+2017-06-03 19:26:54,229  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 1104c602-8702-4de7-b359-c3fc0d2d14a3
+2017-06-03 19:26:54,231  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 1104c602-8702-4de7-b359-c3fc0d2d14a3
+2017-06-03 19:26:54,256  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru ca0470e9-2553-44a7-835d-a251e5ac6417
+2017-06-03 19:26:54,258  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru ca0470e9-2553-44a7-835d-a251e5ac6417
+2017-06-03 19:26:55,861  INFO   Home Defects ::1 merenkov_dmitry@mail.ru e41a465d-4b31-419b-b5ed-896d82e21ed7
+2017-06-03 19:26:55,864  INFO   Home Defects ::1 merenkov_dmitry@mail.ru e41a465d-4b31-419b-b5ed-896d82e21ed7
+2017-06-03 19:26:58,145  INFO   Home Notification ::1 merenkov_dmitry@mail.ru c68a1527-9b3e-44f3-925b-5b2f8a5d30ee
+2017-06-03 19:26:58,148  INFO   Home Notification ::1 merenkov_dmitry@mail.ru c68a1527-9b3e-44f3-925b-5b2f8a5d30ee
+2017-06-03 19:26:58,151  INFO   Home Notification ::1 merenkov_dmitry@mail.ru c68a1527-9b3e-44f3-925b-5b2f8a5d30ee
+2017-06-03 19:26:58,153  INFO   Home Notification ::1 merenkov_dmitry@mail.ru c68a1527-9b3e-44f3-925b-5b2f8a5d30ee
+2017-06-03 19:27:01,216  INFO   Home Index ::1 merenkov_dmitry@mail.ru ed14fded-ad04-42e3-aa0f-8de74aa4624e
+2017-06-03 19:27:01,218  INFO   Home Index ::1 merenkov_dmitry@mail.ru ed14fded-ad04-42e3-aa0f-8de74aa4624e
+2017-06-03 19:27:01,235  INFO  Загружена главная страница
+2017-06-03 19:27:01,280  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 7031b0a3-7d47-432c-b013-ccb2e660a74b
+2017-06-03 19:27:01,283  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 7031b0a3-7d47-432c-b013-ccb2e660a74b
+2017-06-03 19:27:01,307  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 60758a2d-8c93-4c71-8c10-ddae53da5a57
+2017-06-03 19:27:01,309  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 60758a2d-8c93-4c71-8c10-ddae53da5a57
+2017-06-03 19:27:01,331  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru fb75a380-968b-4851-bd76-e5d8a5b5127d
+2017-06-03 19:27:01,345  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru fb75a380-968b-4851-bd76-e5d8a5b5127d
+2017-06-03 19:27:39,653  INFO  Загружена главная страница
+2017-06-03 19:27:41,769  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru e5df8b59-55ee-435f-8afb-d8abfa66fe60
+2017-06-03 19:27:41,773  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru e5df8b59-55ee-435f-8afb-d8abfa66fe60
+2017-06-03 19:27:41,834  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 085951dc-0a05-4236-a21b-c697100e4497
+2017-06-03 19:27:41,837  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 085951dc-0a05-4236-a21b-c697100e4497
+2017-06-03 19:27:41,859  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru bea3546d-f61f-4473-a764-529d8e2fa8d5
+2017-06-03 19:27:41,862  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru bea3546d-f61f-4473-a764-529d8e2fa8d5
+2017-06-03 19:27:46,096  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 84c68bcf-ad68-4bc8-b6a2-624e0026b83d
+2017-06-03 19:27:46,098  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 84c68bcf-ad68-4bc8-b6a2-624e0026b83d
+2017-06-03 19:27:48,331  INFO   Home Notification ::1 merenkov_dmitry@mail.ru ab47f4d7-2543-4ab3-b079-11c77eff4645
+2017-06-03 19:27:48,333  INFO   Home Notification ::1 merenkov_dmitry@mail.ru ab47f4d7-2543-4ab3-b079-11c77eff4645
+2017-06-03 19:27:48,335  INFO   Home Notification ::1 merenkov_dmitry@mail.ru ab47f4d7-2543-4ab3-b079-11c77eff4645
+2017-06-03 19:27:48,337  INFO   Home Notification ::1 merenkov_dmitry@mail.ru ab47f4d7-2543-4ab3-b079-11c77eff4645
+2017-06-03 19:29:45,740  INFO  Загружена главная страница
+2017-06-03 19:29:45,742  INFO  Загружена главная страница
+2017-06-03 19:29:47,862  INFO   Home GetChart1 127.0.0.1 merenkov_dmitry@mail.ru 45c51771-2745-48d4-b93d-a423c785cd64
+2017-06-03 19:29:47,869  INFO   Home GetChart1 127.0.0.1 merenkov_dmitry@mail.ru 45c51771-2745-48d4-b93d-a423c785cd64
+2017-06-03 19:29:47,935  INFO   Home GetChart2 127.0.0.1 merenkov_dmitry@mail.ru f850b074-af67-4514-858b-fbec6558e1a0
+2017-06-03 19:29:47,937  INFO   Home GetChart2 127.0.0.1 merenkov_dmitry@mail.ru f850b074-af67-4514-858b-fbec6558e1a0
+2017-06-03 19:29:47,961  INFO   Home GetChart3 127.0.0.1 merenkov_dmitry@mail.ru 9424379e-15fc-4ae0-a519-e00dd92f62ec
+2017-06-03 19:29:47,964  INFO   Home GetChart3 127.0.0.1 merenkov_dmitry@mail.ru 9424379e-15fc-4ae0-a519-e00dd92f62ec
+2017-06-03 19:29:51,095  INFO   Home Defects 127.0.0.1 merenkov_dmitry@mail.ru d64c6006-4337-4358-ad6e-d6acef559eb9
+2017-06-03 19:29:51,098  INFO   Home Defects 127.0.0.1 merenkov_dmitry@mail.ru d64c6006-4337-4358-ad6e-d6acef559eb9
+2017-06-03 19:29:53,768  INFO   Home Notification 127.0.0.1 merenkov_dmitry@mail.ru 3d17610b-0a4f-4d06-9452-f60db6c95ffa
+2017-06-03 19:29:53,770  INFO   Home Notification 127.0.0.1 merenkov_dmitry@mail.ru 3d17610b-0a4f-4d06-9452-f60db6c95ffa
+2017-06-03 19:29:53,772  INFO   Home Notification 127.0.0.1 merenkov_dmitry@mail.ru 3d17610b-0a4f-4d06-9452-f60db6c95ffa
+2017-06-03 19:29:53,774  INFO   Home Notification 127.0.0.1 merenkov_dmitry@mail.ru 3d17610b-0a4f-4d06-9452-f60db6c95ffa
+2017-06-03 19:30:06,361  INFO   Home Index 127.0.0.1 merenkov_dmitry@mail.ru ce96dc14-da78-42bf-a81a-c65d35c71258
+2017-06-03 19:30:06,363  INFO   Home Index 127.0.0.1 merenkov_dmitry@mail.ru ce96dc14-da78-42bf-a81a-c65d35c71258
+2017-06-03 19:30:06,380  INFO  Загружена главная страница
+2017-06-03 19:30:06,431  INFO   Home GetChart1 127.0.0.1 merenkov_dmitry@mail.ru 13070b01-f229-46e4-afc5-dd8a92211cd2
+2017-06-03 19:30:06,434  INFO   Home GetChart1 127.0.0.1 merenkov_dmitry@mail.ru 13070b01-f229-46e4-afc5-dd8a92211cd2
+2017-06-03 19:30:06,460  INFO   Home GetChart2 127.0.0.1 merenkov_dmitry@mail.ru 42ed76b0-ac2a-4b73-84a2-0a8ccfb11889
+2017-06-03 19:30:06,464  INFO   Home GetChart2 127.0.0.1 merenkov_dmitry@mail.ru 42ed76b0-ac2a-4b73-84a2-0a8ccfb11889
+2017-06-03 19:30:06,487  INFO   Home GetChart3 127.0.0.1 merenkov_dmitry@mail.ru e390ceef-62ea-4237-8775-7b0451d01d66
+2017-06-03 19:30:06,490  INFO   Home GetChart3 127.0.0.1 merenkov_dmitry@mail.ru e390ceef-62ea-4237-8775-7b0451d01d66
+2017-06-03 19:31:28,085  INFO  Загружена главная страница
+2017-06-03 19:31:30,217  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 4d2eb42e-e030-40f7-8d24-a2670e53b967
+2017-06-03 19:31:30,222  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 4d2eb42e-e030-40f7-8d24-a2670e53b967
+2017-06-03 19:31:30,281  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru ebb0ef97-4036-498e-b576-8343fd8dca47
+2017-06-03 19:31:30,284  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru ebb0ef97-4036-498e-b576-8343fd8dca47
+2017-06-03 19:31:30,307  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru e95112a3-e98b-4d93-bd6c-94eab26b9883
+2017-06-03 19:31:30,309  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru e95112a3-e98b-4d93-bd6c-94eab26b9883
+2017-06-03 19:31:31,375  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 1246aad3-ae98-4f9e-af63-5a0f9b3e630f
+2017-06-03 19:31:31,377  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 1246aad3-ae98-4f9e-af63-5a0f9b3e630f
+2017-06-03 19:31:39,215  INFO   Home Notification ::1 merenkov_dmitry@mail.ru c6691480-0c36-40c6-a0cb-2b0932a015d0
+2017-06-03 19:31:39,218  INFO   Home Notification ::1 merenkov_dmitry@mail.ru c6691480-0c36-40c6-a0cb-2b0932a015d0
+2017-06-03 19:31:39,220  INFO   Home Notification ::1 merenkov_dmitry@mail.ru c6691480-0c36-40c6-a0cb-2b0932a015d0
+2017-06-03 19:31:39,222  INFO   Home Notification ::1 merenkov_dmitry@mail.ru c6691480-0c36-40c6-a0cb-2b0932a015d0
+2017-06-03 19:34:32,113  INFO  Загружена главная страница
+2017-06-03 19:34:32,113  INFO  Загружена главная страница
+2017-06-03 19:34:34,327  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 9c7f569b-2cb1-4dda-9bce-1ff2484094eb
+2017-06-03 19:34:34,333  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 9c7f569b-2cb1-4dda-9bce-1ff2484094eb
+2017-06-03 19:34:34,397  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 940ab59b-cfa0-4219-aea9-645d5875c6e5
+2017-06-03 19:34:34,399  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 940ab59b-cfa0-4219-aea9-645d5875c6e5
+2017-06-03 19:34:34,426  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 858aa027-784f-4da7-93a4-9b15ebd333d7
+2017-06-03 19:34:34,428  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 858aa027-784f-4da7-93a4-9b15ebd333d7
+2017-06-03 19:34:38,921  INFO   Home Defects ::1 merenkov_dmitry@mail.ru c6e39598-e58c-48e5-be76-01c45e3808f8
+2017-06-03 19:34:38,924  INFO   Home Defects ::1 merenkov_dmitry@mail.ru c6e39598-e58c-48e5-be76-01c45e3808f8
+2017-06-03 19:34:41,176  INFO   Home Notification ::1 merenkov_dmitry@mail.ru eeb282f2-7a68-4e34-bd9f-6c32d25d05c7
+2017-06-03 19:34:41,179  INFO   Home Notification ::1 merenkov_dmitry@mail.ru eeb282f2-7a68-4e34-bd9f-6c32d25d05c7
+2017-06-03 19:34:41,181  INFO   Home Notification ::1 merenkov_dmitry@mail.ru eeb282f2-7a68-4e34-bd9f-6c32d25d05c7
+2017-06-03 19:34:41,184  INFO   Home Notification ::1 merenkov_dmitry@mail.ru eeb282f2-7a68-4e34-bd9f-6c32d25d05c7
+2017-06-03 19:38:20,356  INFO  Загружена главная страница
+2017-06-03 19:38:22,549  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 04069aa7-737b-4ecc-97b1-fcc8dd713ee9
+2017-06-03 19:38:22,552  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 04069aa7-737b-4ecc-97b1-fcc8dd713ee9
+2017-06-03 19:38:22,616  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 8d0cb9bf-18d5-4e7a-8711-2a3d1aa4f1c5
+2017-06-03 19:38:22,619  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 8d0cb9bf-18d5-4e7a-8711-2a3d1aa4f1c5
+2017-06-03 19:38:22,647  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 43c191f1-219c-4170-ac8d-eb718488103b
+2017-06-03 19:38:22,649  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 43c191f1-219c-4170-ac8d-eb718488103b
+2017-06-03 19:38:29,908  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 45cfce4e-cab1-4fc0-b4fa-45e9d5d6751b
+2017-06-03 19:38:29,912  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 45cfce4e-cab1-4fc0-b4fa-45e9d5d6751b
+2017-06-03 19:38:32,123  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 852a4d86-f5ef-4229-9d5c-4b128d0a2f96
+2017-06-03 19:38:32,126  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 852a4d86-f5ef-4229-9d5c-4b128d0a2f96
+2017-06-03 19:38:32,128  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 852a4d86-f5ef-4229-9d5c-4b128d0a2f96
+2017-06-03 19:38:32,130  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 852a4d86-f5ef-4229-9d5c-4b128d0a2f96
+2017-06-03 19:43:35,408  INFO  Загружена главная страница
+2017-06-03 19:43:37,550  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 44805771-e4e6-4c09-8120-eaa33c1918d5
+2017-06-03 19:43:37,555  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 44805771-e4e6-4c09-8120-eaa33c1918d5
+2017-06-03 19:43:37,613  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru e5424b76-0809-4ce5-b459-375634c12c0f
+2017-06-03 19:43:37,616  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru e5424b76-0809-4ce5-b459-375634c12c0f
+2017-06-03 19:43:37,645  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru ff529162-ee9a-4d36-9a77-c7647b4c5c2a
+2017-06-03 19:43:37,648  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru ff529162-ee9a-4d36-9a77-c7647b4c5c2a
+2017-06-03 19:43:38,995  INFO   Home Defects ::1 merenkov_dmitry@mail.ru c0bd4a0b-ab05-4721-935e-fa4c58b001a2
+2017-06-03 19:43:38,998  INFO   Home Defects ::1 merenkov_dmitry@mail.ru c0bd4a0b-ab05-4721-935e-fa4c58b001a2
+2017-06-03 19:43:49,347  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 19bc4212-a8e8-45da-8a5a-b9529caa26a7
+2017-06-03 19:43:49,350  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 19bc4212-a8e8-45da-8a5a-b9529caa26a7
+2017-06-03 19:43:49,353  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 19bc4212-a8e8-45da-8a5a-b9529caa26a7
+2017-06-03 19:43:49,355  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 19bc4212-a8e8-45da-8a5a-b9529caa26a7
+2017-06-03 19:44:28,384  INFO   Home Index ::1 merenkov_dmitry@mail.ru 11965b8d-cf46-423d-8aee-10a4380cd394
+2017-06-03 19:44:28,387  INFO   Home Index ::1 merenkov_dmitry@mail.ru 11965b8d-cf46-423d-8aee-10a4380cd394
+2017-06-03 19:44:28,405  INFO  Загружена главная страница
+2017-06-03 19:44:28,456  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 8eaa39f7-4663-4f0f-9a96-4eb963a3e607
+2017-06-03 19:44:28,460  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 8eaa39f7-4663-4f0f-9a96-4eb963a3e607
+2017-06-03 19:44:28,486  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 9ceb470b-b106-4697-bd8e-5171f3ca71db
+2017-06-03 19:44:28,490  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 9ceb470b-b106-4697-bd8e-5171f3ca71db
+2017-06-03 19:44:28,513  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 91529b22-1329-43d1-b3cf-90fc0e8f1873
+2017-06-03 19:44:28,517  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 91529b22-1329-43d1-b3cf-90fc0e8f1873
+2017-06-03 20:07:01,902  INFO  Загружена главная страница
+2017-06-03 20:07:04,032  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 92049196-d2a4-4364-a678-97b3655813dc
+2017-06-03 20:07:04,035  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 92049196-d2a4-4364-a678-97b3655813dc
+2017-06-03 20:07:04,102  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 5e6ca56b-da67-4eb4-940b-721d227bd87e
+2017-06-03 20:07:04,106  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 5e6ca56b-da67-4eb4-940b-721d227bd87e
+2017-06-03 20:07:04,131  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru a5ae96a4-8406-4fc4-8c7b-7e12ed97ddb0
+2017-06-03 20:07:04,134  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru a5ae96a4-8406-4fc4-8c7b-7e12ed97ddb0
+2017-06-03 20:07:06,463  INFO   Home Defects ::1 merenkov_dmitry@mail.ru fdceed8d-b710-4d00-9197-6f53677707f0
+2017-06-03 20:07:06,466  INFO   Home Defects ::1 merenkov_dmitry@mail.ru fdceed8d-b710-4d00-9197-6f53677707f0
+2017-06-03 20:07:08,791  INFO   Home Notification ::1 merenkov_dmitry@mail.ru cea5d1b1-b0f4-450c-8631-3cef37271e69
+2017-06-03 20:07:08,793  INFO   Home Notification ::1 merenkov_dmitry@mail.ru cea5d1b1-b0f4-450c-8631-3cef37271e69
+2017-06-03 20:07:08,795  INFO   Home Notification ::1 merenkov_dmitry@mail.ru cea5d1b1-b0f4-450c-8631-3cef37271e69
+2017-06-03 20:07:08,797  INFO   Home Notification ::1 merenkov_dmitry@mail.ru cea5d1b1-b0f4-450c-8631-3cef37271e69
+2017-06-03 20:10:15,078  INFO  Загружена главная страница
+2017-06-03 20:10:17,281  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru a7e6ba40-9b67-45c3-a075-09add5e27803
+2017-06-03 20:10:17,287  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru a7e6ba40-9b67-45c3-a075-09add5e27803
+2017-06-03 20:10:17,345  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru c3541da2-5236-40aa-b012-14e45ad799af
+2017-06-03 20:10:17,348  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru c3541da2-5236-40aa-b012-14e45ad799af
+2017-06-03 20:10:17,372  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 39203e5b-9875-4d00-9da5-982c9cb4d756
+2017-06-03 20:10:17,375  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 39203e5b-9875-4d00-9da5-982c9cb4d756
+2017-06-03 20:10:29,538  INFO   Home Defects ::1 merenkov_dmitry@mail.ru fbd4e69f-88c1-41f1-baf1-c9230183e798
+2017-06-03 20:10:29,541  INFO   Home Defects ::1 merenkov_dmitry@mail.ru fbd4e69f-88c1-41f1-baf1-c9230183e798
+2017-06-03 20:10:33,752  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 69c4f557-e262-44c3-8893-9e892f877729
+2017-06-03 20:10:33,755  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 69c4f557-e262-44c3-8893-9e892f877729
+2017-06-03 20:10:33,759  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 69c4f557-e262-44c3-8893-9e892f877729
+2017-06-03 20:10:33,761  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 69c4f557-e262-44c3-8893-9e892f877729
+2017-06-03 20:10:36,099  INFO   Home Index ::1 merenkov_dmitry@mail.ru db917753-00f1-40d8-acce-2a5ba946e6ec
+2017-06-03 20:10:36,102  INFO   Home Index ::1 merenkov_dmitry@mail.ru db917753-00f1-40d8-acce-2a5ba946e6ec
+2017-06-03 20:10:36,128  INFO  Загружена главная страница
+2017-06-03 20:10:36,177  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 8d24f39b-e31c-4a4b-866e-769de61fa444
+2017-06-03 20:10:36,180  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 8d24f39b-e31c-4a4b-866e-769de61fa444
+2017-06-03 20:10:36,203  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 59835258-a460-4227-aa8e-333f7d2ebb54
+2017-06-03 20:10:36,207  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 59835258-a460-4227-aa8e-333f7d2ebb54
+2017-06-03 20:10:36,233  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 2d0e9069-d77c-4f32-b3ee-8ecaab9bb214
+2017-06-03 20:10:36,235  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 2d0e9069-d77c-4f32-b3ee-8ecaab9bb214
+2017-06-03 20:11:57,691  INFO   Home Defects ::1 merenkov_dmitry@mail.ru e2854b0c-f021-4975-b10b-fda3df87992a
+2017-06-03 20:11:57,693  INFO   Home Defects ::1 merenkov_dmitry@mail.ru e2854b0c-f021-4975-b10b-fda3df87992a
+2017-06-03 20:12:02,884  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 06a75b0e-acaa-462e-91c1-3c2de47870ba
+2017-06-03 20:12:02,887  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 06a75b0e-acaa-462e-91c1-3c2de47870ba
+2017-06-03 20:12:02,890  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 06a75b0e-acaa-462e-91c1-3c2de47870ba
+2017-06-03 20:12:02,894  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 06a75b0e-acaa-462e-91c1-3c2de47870ba
+2017-06-03 20:12:39,422  INFO   Home Index ::1 merenkov_dmitry@mail.ru ea96262f-eea9-459c-83c9-52a4dc48026e
+2017-06-03 20:12:39,426  INFO   Home Index ::1 merenkov_dmitry@mail.ru ea96262f-eea9-459c-83c9-52a4dc48026e
+2017-06-03 20:12:39,448  INFO  Загружена главная страница
+2017-06-03 20:12:39,507  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru bdca8ee1-f3a4-4571-91f4-0c6b38412035
+2017-06-03 20:12:39,525  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru bdca8ee1-f3a4-4571-91f4-0c6b38412035
+2017-06-03 20:12:39,548  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru cc68aeb4-36e8-49d0-9d31-bdaf37b1fbad
+2017-06-03 20:12:39,551  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru cc68aeb4-36e8-49d0-9d31-bdaf37b1fbad
+2017-06-03 20:12:39,575  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 6d8cd4a5-c3c5-4db5-b7bc-c2f274761845
+2017-06-03 20:12:39,579  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 6d8cd4a5-c3c5-4db5-b7bc-c2f274761845
+2017-06-03 20:22:50,785  INFO  Загружена главная страница
+2017-06-03 20:22:52,921  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 5c3e6b64-a00a-49a2-9227-10bba678fe7c
+2017-06-03 20:22:52,925  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 5c3e6b64-a00a-49a2-9227-10bba678fe7c
+2017-06-03 20:22:53,013  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru b3f50c24-60f0-46d8-8a01-133a4852539d
+2017-06-03 20:22:53,017  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru b3f50c24-60f0-46d8-8a01-133a4852539d
+2017-06-03 20:22:53,049  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru bb5ce1b5-b2cc-45b3-b466-199e3b9f20ab
+2017-06-03 20:22:53,052  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru bb5ce1b5-b2cc-45b3-b466-199e3b9f20ab
+2017-06-03 20:22:54,340  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 523a6d2c-3408-42f7-b170-37a49526d4ae
+2017-06-03 20:22:54,343  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 523a6d2c-3408-42f7-b170-37a49526d4ae
+2017-06-03 20:28:04,482  INFO  Загружена главная страница
+2017-06-03 20:28:06,637  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru e416d3a6-9935-497b-a2fd-414967786837
+2017-06-03 20:28:06,640  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru e416d3a6-9935-497b-a2fd-414967786837
+2017-06-03 20:28:06,694  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 25e1e5cf-6789-4076-b0e0-90423d17c5bd
+2017-06-03 20:28:06,696  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru 25e1e5cf-6789-4076-b0e0-90423d17c5bd
+2017-06-03 20:28:06,720  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru e170f70f-ae09-42d8-95c8-57819b979795
+2017-06-03 20:28:06,723  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru e170f70f-ae09-42d8-95c8-57819b979795
+2017-06-03 20:28:19,767  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 0072ea63-45bc-4ec1-86ab-3625467acd18
+2017-06-03 20:28:19,770  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 0072ea63-45bc-4ec1-86ab-3625467acd18
+2017-06-03 20:28:44,124  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 70f6d302-7495-45f9-bf24-9861bd02b53d
+2017-06-03 20:28:44,127  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 70f6d302-7495-45f9-bf24-9861bd02b53d
+2017-06-03 20:28:44,130  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 70f6d302-7495-45f9-bf24-9861bd02b53d
+2017-06-03 20:28:44,132  INFO   Home Notification ::1 merenkov_dmitry@mail.ru 70f6d302-7495-45f9-bf24-9861bd02b53d
+2017-06-03 20:28:47,435  INFO   Home Defects ::1 merenkov_dmitry@mail.ru a378475b-2076-4d4b-9079-5960659f57e4
+2017-06-03 20:28:47,437  INFO   Home Defects ::1 merenkov_dmitry@mail.ru a378475b-2076-4d4b-9079-5960659f57e4
+2017-06-03 20:32:28,135  INFO  Загружена главная страница
+2017-06-03 20:32:28,959  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 500dd940-497f-4e68-b6bf-e7d4407e6175
+2017-06-03 20:32:28,964  INFO   Home GetChart1 ::1 merenkov_dmitry@mail.ru 500dd940-497f-4e68-b6bf-e7d4407e6175
+2017-06-03 20:32:29,036  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru d77396e8-8888-4fd4-9c4a-012ce22879b6
+2017-06-03 20:32:29,039  INFO   Home GetChart2 ::1 merenkov_dmitry@mail.ru d77396e8-8888-4fd4-9c4a-012ce22879b6
+2017-06-03 20:32:29,061  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 2eb0990d-9845-4bee-9664-8be1d353200f
+2017-06-03 20:32:29,064  INFO   Home GetChart3 ::1 merenkov_dmitry@mail.ru 2eb0990d-9845-4bee-9664-8be1d353200f
+2017-06-03 20:32:31,130  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 7f96b409-e80a-4723-92b7-2c7508236839
+2017-06-03 20:32:31,133  INFO   Home Defects ::1 merenkov_dmitry@mail.ru 7f96b409-e80a-4723-92b7-2c7508236839

@@ -8,7 +8,7 @@
 
 <html>
 <head>
-   
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     @Scripts.Render("~/Scripts/jquery.unobtrusive-ajax.js")
@@ -303,7 +303,7 @@
         <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12" style="padding-top:25px">
             <div class="panel-group">
                 <div class="panel panel-danger">
-                    <div class="panel-heading">Дефекты - последние 10 регистраций</div>
+                    <div class="panel-heading">Дефекты - неподтвержденные</div>
                     <table class="table table-hover table-bordered" id="table2">
                         <thead>
                             <tr>
@@ -314,31 +314,36 @@
                                 <th>Описание</th>
                                 <th>Дата</th>
                                 <th>Статус</th>
+                               
                             </tr>
                         </thead>
                         @foreach (var data in ((PatrinWebLabs.Models.Defects)Model[1]).Data2)
                         {
                             <tbody>
                                 <tr>
-                                    <td>@data.DefectName</td>
-                                    <td>@data.DefectLine</td>
-                                    <td>@data.DefectNameWorkPlace</td>
-                                    <td>@data.DefectTurno</td>
-                                    <td>@data.DefectDescription</td>
-                                    <td>@data.DefectDate</td>
-                                    @if (@data.DefectStatus == "На линии")
+                                   
+                                    @if (data.DefectStatus != "Подтвержден")
                                     {
-                                        <td class="danger">@data.DefectStatus</td>
+                                        <td>@data.DefectName</td>
+                                        <td>@data.DefectLine</td>
+                                        <td>@data.DefectNameWorkPlace</td>
+                                        <td>@data.DefectTurno</td>
+                                        <td>@data.DefectDescription</td>
+                                        <td>@data.DefectDate</td>
+                                        if (@data.DefectStatus == "На ремзоне")
+                                        {
+                                            <td class="warning">@data.DefectStatus</td>
+                                        }
+                                        if (@data.DefectStatus == "На линии")
+                                        {
+                                            <td class="danger">@data.DefectStatus</td>
+                                        }
                                     }
-                                    else
-                                    {
-                                        <td class="success">@data.DefectStatus</td>
-                                    }
-                                    <td>
-                                        <label class="custom">
-                                            <input type="checkbox" name="record"><span></span>
-                                        </label>
-                                    </td>
+                                    @*<td>
+                                            <label class="custom">
+                                                <input type="checkbox" name="record"><span></span>
+                                            </label>
+                                        </td>*@
                                 </tr>
                             </tbody>
                         }
@@ -357,6 +362,6 @@
             </div>
         </div>
     }
-  
+
 </body>
 </html>
