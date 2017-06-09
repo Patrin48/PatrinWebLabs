@@ -286,8 +286,11 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\google2bforms.jpg" />
+    <Content Include="Content\Log.txt" />
     <Content Include="Content\MyStyleSheet.css" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\simplebox.css" />
     <Content Include="Content\typeahead.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -327,10 +330,10 @@
     <Content Include="Logs\Error.log.2017-05-19" />
     <Content Include="Logs\Error.log.2017-06-03" />
     <Content Include="Logs\Error.log.2017-06-05" />
-    <Content Include="Content\credentials\script-dotnet-quickstart.json\Google.Apis.Auth.OAuth2.Responses.TokenResponse-user" />
     <Content Include="Content\client_secret.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\credentials\sheets.googleapis.com-dotnet-quickstart.json\Google.Apis.Auth.OAuth2.Responses.TokenResponse-user" />
     <None Include="Properties\PublishProfiles\Hosting.pubxml" />
     <None Include="Properties\PublishProfiles\PatrinWebLabs2017 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />

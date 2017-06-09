@@ -1,15 +1,12 @@
 ﻿using Google.Apis.Auth.OAuth2;
+using Google.Apis.Services;
 using Google.Apis.Sheets.v4;
 using Google.Apis.Sheets.v4.Data;
-using Google.Apis.Services;
 using Google.Apis.Util.Store;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.IO;
-using System.Net;
-using System.Text;
-using System.Web.Mvc;
 using System.Threading;
 
 
@@ -405,7 +402,7 @@ namespace PatrinWebLabs.Models
                                     }
                                 }
                             }
-                            catch (Exception ex)
+                            catch (Exception)
                             {
                                 counter++;
                             }
@@ -419,7 +416,7 @@ namespace PatrinWebLabs.Models
                                     }
                                 }
                             }
-                            tmp.Persentage = ((double)(rightPercentage * 100) / (values.Count-2));
+                            tmp.Persentage = ((double)(rightPercentage * 100) / (values.Count-1));
                             tmp.Persentage = Math.Round(tmp.Persentage, 0);
                             SumPercent += tmp.Persentage;
                             rightPercentage = 0;

@@ -188,33 +188,29 @@ namespace PatrinWebLabs.Controllers
             var dates = new List<Tuple<int, string>>(
                   new[]
                          {
-                           new Tuple<int, string> (65, "Январь"),
-                           new Tuple<int, string> (69, "Февраль"),
-                           new Tuple<int, string> (90, "Март"),
-                           new Tuple<int, string> (81, "Апрель"),
-                           new Tuple<int, string> (81, "Май"),
-                           new Tuple<int, string> (55, "Июнь"),
-                           new Tuple<int, string> (66, "Июль"),
-                           new Tuple<int, string> (89, "Август"),
-                           new Tuple<int, string> (91, "Сентябрь"),
-                           new Tuple<int, string> (97, "Октябрь"),
-                           new Tuple<int, string> (87, "Ноябрь"),
-                           new Tuple<int, string> (84, "Декабрь"),
+                           new Tuple<int, string> (78, "Понедельник"),
+                           new Tuple<int, string> (88, "Вторник"),
+                           new Tuple<int, string> (90, "Среда"),
+                           new Tuple<int, string> (81, "Четверг"),
+                           new Tuple<int, string> (81, "Пятница"),
+                           new Tuple<int, string> (0, "Суббота"),
                          }
                   );
             string Text = "Индекс IMQ";
             string Name = "Индекс IMQ - кривая";
-            var chart = new Chart();
-            chart.Width = 900;
-            chart.Height = 300;
-            chart.BackColor = Color.FromArgb(141, 172, 215);
-            chart.BorderlineDashStyle = ChartDashStyle.Solid;
-            chart.BackSecondaryColor = Color.CadetBlue;
-            chart.BackGradientStyle = GradientStyle.TopBottom;
-            chart.BorderlineWidth = 1;
-            chart.Palette = ChartColorPalette.BrightPastel;
-            chart.BorderlineColor = Color.FromArgb(26, 59, 105);
-            chart.RenderType = RenderType.BinaryStreaming;
+            var chart = new Chart()
+            {
+                Width = 900,
+                Height = 300,
+                BackColor = Color.FromArgb(141, 172, 215),
+                BorderlineDashStyle = ChartDashStyle.Solid,
+                BackSecondaryColor = Color.CadetBlue,
+                BackGradientStyle = GradientStyle.TopBottom,
+                BorderlineWidth = 1,
+                Palette = ChartColorPalette.BrightPastel,
+                BorderlineColor = Color.FromArgb(26, 59, 105),
+                RenderType = RenderType.BinaryStreaming
+            };
             chart.BorderSkin.SkinStyle = BorderSkinStyle.None;
             chart.AntiAliasing = AntiAliasingStyles.All;
             chart.TextAntiAliasingQuality = TextAntiAliasingQuality.Normal;
@@ -232,33 +228,29 @@ namespace PatrinWebLabs.Controllers
             var dates = new List<Tuple<int, string>>(
                   new[]
                          {
-                           new Tuple<int, string> (89, "Январь"),
-                           new Tuple<int, string> (76, "Февраль"),
-                           new Tuple<int, string> (98, "Март"),
-                           new Tuple<int, string> (67, "Апрель"),
-                           new Tuple<int, string> (89, "Май"),
-                           new Tuple<int, string> (55, "Июнь"),
-                           new Tuple<int, string> (89, "Июль"),
-                           new Tuple<int, string> (89, "Август"),
-                           new Tuple<int, string> (99, "Сентябрь"),
-                           new Tuple<int, string> (94, "Октябрь"),
-                           new Tuple<int, string> (87, "Ноябрь"),
-                           new Tuple<int, string> (84, "Декабрь"),
+                          new Tuple<int, string> (54, "Понедельник"),
+                           new Tuple<int, string> (72, "Вторник"),
+                           new Tuple<int, string> (88, "Среда"),
+                           new Tuple<int, string> (77, "Четверг"),
+                           new Tuple<int, string> (89, "Пятница"),
+                           new Tuple<int, string> (0, "Суббота"),
                          }
                   );
             string Text = "Показатель бездефектности производства";
             string Name = "Индекс A-Defects - кривая";
-            var chart = new Chart();
-            chart.Width = 900;
-            chart.Height = 300;
-            chart.BackColor = Color.FromArgb(229, 43, 80);
-            chart.BorderlineDashStyle = ChartDashStyle.Solid;
-            chart.BackSecondaryColor = Color.DarkOrchid;
-            chart.BackGradientStyle = GradientStyle.TopBottom;
-            chart.BorderlineWidth = 1;
-            chart.Palette = ChartColorPalette.BrightPastel;
-            chart.BorderlineColor = Color.FromArgb(26, 59, 105);
-            chart.RenderType = RenderType.BinaryStreaming;
+            var chart = new Chart()
+            {
+                Width = 900,
+                Height = 300,
+                BackColor = Color.FromArgb(229, 43, 80),
+                BorderlineDashStyle = ChartDashStyle.Solid,
+                BackSecondaryColor = Color.DarkOrchid,
+                BackGradientStyle = GradientStyle.TopBottom,
+                BorderlineWidth = 1,
+                Palette = ChartColorPalette.BrightPastel,
+                BorderlineColor = Color.FromArgb(26, 59, 105),
+                RenderType = RenderType.BinaryStreaming
+            };
             chart.BorderSkin.SkinStyle = BorderSkinStyle.None;
             chart.AntiAliasing = AntiAliasingStyles.All;
             chart.TextAntiAliasingQuality = TextAntiAliasingQuality.Normal;
@@ -291,17 +283,19 @@ namespace PatrinWebLabs.Controllers
                   );
             string Text = "Показатель FPY";
             string Name = "Индекс FPY - кривая";
-            var chart = new Chart();
-            chart.Width = 900;
-            chart.Height = 300;
-            chart.BackColor = Color.FromArgb(255, 204, 0);
-            chart.BorderlineDashStyle = ChartDashStyle.Solid;
-            chart.BackSecondaryColor = Color.WhiteSmoke;
-            chart.BackGradientStyle = GradientStyle.TopBottom;
-            chart.BorderlineWidth = 1;
-            chart.Palette = ChartColorPalette.BrightPastel;
-            chart.BorderlineColor = Color.FromArgb(26, 59, 105);
-            chart.RenderType = RenderType.BinaryStreaming;
+            var chart = new Chart()
+            {
+                Width = 900,
+                Height = 300,
+                BackColor = Color.FromArgb(255, 204, 0),
+                BorderlineDashStyle = ChartDashStyle.Solid,
+                BackSecondaryColor = Color.WhiteSmoke,
+                BackGradientStyle = GradientStyle.TopBottom,
+                BorderlineWidth = 1,
+                Palette = ChartColorPalette.BrightPastel,
+                BorderlineColor = Color.FromArgb(26, 59, 105),
+                RenderType = RenderType.BinaryStreaming
+            };
             chart.BorderSkin.SkinStyle = BorderSkinStyle.None;
             chart.AntiAliasing = AntiAliasingStyles.All;
             chart.TextAntiAliasingQuality = TextAntiAliasingQuality.Normal;
@@ -316,13 +310,14 @@ namespace PatrinWebLabs.Controllers
         [NonAction]
         public Title CreateTitle(string Text)
         {
-            Title title = new Title();
-            title.Text = Text;
-            title.ShadowColor = Color.FromArgb(32, 0, 0, 0);
-            title.Font = new Font("Trebuchet MS", 14F, FontStyle.Bold);
-            title.ShadowOffset = 3;
-            title.ForeColor = Color.FromArgb(26, 59, 105);
-
+            Title title = new Title()
+            {
+                Text = Text,
+                ShadowColor = Color.FromArgb(32, 0, 0, 0),
+                Font = new Font("Trebuchet MS", 14F, FontStyle.Bold),
+                ShadowOffset = 3,
+                ForeColor = Color.FromArgb(26, 59, 105)
+            };
             return title;
         }
         [NonAction]
@@ -330,21 +325,25 @@ namespace PatrinWebLabs.Controllers
        SeriesChartType chartType,
        Color color, string Name)
         {
-            var seriesDetail = new Series();
-            seriesDetail.Name = Name;
-            seriesDetail.IsValueShownAsLabel = false;
-            seriesDetail.Color = color;
-            seriesDetail.ChartType = chartType;
-            seriesDetail.BorderWidth = 2;
+            var seriesDetail = new Series()
+            {
+                Name = Name,
+                IsValueShownAsLabel = false,
+                Color = color,
+                ChartType = chartType,
+                BorderWidth = 2
+            };
             seriesDetail["DrawingStyle"] = "Cylinder";
             seriesDetail["PieDrawingStyle"] = "SoftEdge";
             DataPoint point;
 
             foreach (var result in results)
             {
-                point = new DataPoint();
-                point.AxisLabel = result.Item2;
-                point.YValues = new double[] { result.Item1 };
+                point = new DataPoint()
+                {
+                    AxisLabel = result.Item2,
+                    YValues = new double[] { result.Item1 }
+                };
                 seriesDetail.Points.Add(point);
             }
             seriesDetail.ChartArea = "Result Chart";
@@ -354,22 +353,25 @@ namespace PatrinWebLabs.Controllers
         [NonAction]
         public Legend CreateLegend()
         {
-            var legend = new Legend();
-            legend.Name = "Result Chart";
-            legend.Docking = Docking.Bottom;
-            legend.Alignment = StringAlignment.Center;
-            legend.BackColor = Color.Transparent;
-            legend.Font = new Font(new FontFamily("Trebuchet MS"), 9);
-            legend.LegendStyle = LegendStyle.Row;
-
+            var legend = new Legend()
+            {
+                Name = "Result Chart",
+                Docking = Docking.Bottom,
+                Alignment = StringAlignment.Center,
+                BackColor = Color.Transparent,
+                Font = new Font(new FontFamily("Trebuchet MS"), 9),
+                LegendStyle = LegendStyle.Row
+            };
             return legend;
         }
         [NonAction]
         public ChartArea CreateChartArea()
         {
-            var chartArea = new ChartArea();
-            chartArea.Name = "Result Chart";
-            chartArea.BackColor = Color.Transparent;
+            var chartArea = new ChartArea()
+            {
+                Name = "Result Chart",
+                BackColor = Color.Transparent
+            };
             chartArea.AxisX.IsLabelAutoFit = false;
             chartArea.AxisY.IsLabelAutoFit = false;
             chartArea.AxisX.LabelStyle.Font = new Font("Verdana,Arial,Helvetica,sans-serif", 8F, FontStyle.Regular);
@@ -405,7 +407,7 @@ namespace PatrinWebLabs.Controllers
                     using (SqlCommand command = cn.CreateCommand())
                     {
 
-                        command.CommandText = string.Format("UPDATE Defects SET Defects.Defect_Status='Подтвержден' WHERE Defects.Defect_Name_of_Defect='{0}'", Str);
+                        command.CommandText = string.Format("UPDATE Defects SET Defects.Defect_Status='Подтвержден' WHERE Defects.Defect_Name_of_Defect='{0}' AND Defects.Defect_Date='{1}' ", Str, Str1);
                         command.ExecuteNonQuery();
                     }
                     cn.Close();
@@ -415,7 +417,7 @@ namespace PatrinWebLabs.Controllers
             }
             catch (Exception ex)
             {
-                return Json("Ошибка при удалении!"+ex.Message);
+                return Json("Ошибка при обнлвении статуса дефекта!"+ex.Message);
             }
         }
 
@@ -539,6 +541,29 @@ namespace PatrinWebLabs.Controllers
                     ArrayList allData = new ArrayList();
                     load_def.LoadDefects();
 
+                    IEnumerable<string> workplaces = new string[] {};
+
+                    using (SqlConnection cn = new SqlConnection())
+                    {
+                        cn.ConnectionString = @"Data Source=patrin.ddns.net,1433;Initial Catalog=OIProject;Persist Security Info=True;User ID=sa;Password=18swlgnm";
+                        cn.Open();
+
+                        using (SqlCommand command = cn.CreateCommand())
+                        {
+
+                            command.CommandText = string.Format("SELECT NameWorkPlace,PlaceN FROM WorkPlaces WHERE WorkPlaces.NameWorkPlace IS NOT NULL");
+                            using (SqlDataReader dr = command.ExecuteReader())
+                            {
+                                while (dr.Read())
+                                {
+                                    workplaces = workplaces.Concat(new string[] { dr[0].ToString()+ "—" + dr[1].ToString() });
+                                }
+                            }
+                        }
+                        cn.Close();
+                    }
+
+                    ViewBag.Notifications = workplaces;
 
                     allData.Add(load_def);
                     var model = load_def.Data2.ToList();
@@ -684,7 +709,7 @@ namespace PatrinWebLabs.Controllers
                     if (upload != null && PlaceN != "")
                     {
                         string fileName = Path.GetFileName(upload.FileName);
-                        if (fileName.Contains("jpg"))
+                        if (fileName.Contains("jpg")|| fileName.Contains("JPG"))
                         {
                             upload.SaveAs(Server.MapPath("~/TempFiles/" + fileName));
                             using (var client = new WebClient())
@@ -803,19 +828,20 @@ namespace PatrinWebLabs.Controllers
             Logger.Log.Info("Выполнен AJAX-запрос, планшеты опрошены");
             return PartialView(allData);
         }
-        public ActionResult Notification(string inputType, string inputDescription)
+        public ActionResult Notification(string Type, string inputDescription, string Notifications)
         {
             try
             {
-                if (inputType == "" || inputDescription == "")
+                if (Type == "" || inputDescription == "")
                 {
                     return Content("<script language='javascript' type='text/javascript'>alert('Поля оповещения не заполнены!');window.location.href = 'Defects';</script>");
                 }
                 else
                 {
+                    string id = Notifications.Split(new Char[] { '—' }, StringSplitOptions.RemoveEmptyEntries)[1];
                     var applicationID = "AAAACy-503E:APA91bEFVnmz9bEExoaO_97h7zfu9gVNTriNrkaS76G5X3GyS5oLenSchuAFDOnXv9qU7dRlLn7e1gl1dI5kNWHvWy0Le0vvu7R6N_ke_jJGkhJxVSfXcIiHypBuV8JDUMrxFLrACOQu";
                     var senderId = "48045347697";
-                    string deviceId = "/topics/defects";
+                    string deviceId = "/topics/"+id;
                     WebRequest tRequest = WebRequest.Create("https://fcm.googleapis.com/fcm/send");
                     tRequest.Method = "post";
                     tRequest.ContentType = "application/json";
@@ -824,8 +850,8 @@ namespace PatrinWebLabs.Controllers
                         to = deviceId,
                         notification = new
                         {
-                            body = "(" + inputType + ")" + " " + inputDescription,
-                            title = inputType,
+                            body =  Type + " " + inputDescription,
+                            title = Type,
                         },
                         priority = "high"
 
